@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>喜欢雨天的我</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-06-06T00:23:07.248Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Hou Shuai</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新文章</title>
+    <link href="http://yoursite.com/2016/06/06/%E6%96%B0%E6%96%87%E7%AB%A0/"/>
+    <id>http://yoursite.com/2016/06/06/新文章/</id>
+    <published>2016-06-06T00:23:07.000Z</published>
+    <updated>2016-06-06T00:23:07.248Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2016/06/05/hello-world/"/>
+    <id>http://yoursite.com/2016/06/05/hello-world/</id>
+    <published>2016-06-05T13:24:30.773Z</published>
+    <updated>2016-06-06T00:26:30.308Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;h2 id=&quot;title-创建博客第一天&quot;&gt;&lt;a href=&quot;#title-创建博客第一天&quot; class=&quot;headerlink&quot; title=&quot;title: 创建博客第一天&quot;&gt;&lt;/a&gt;title: 创建博客第一天&lt;/h2&gt;&lt;p&gt;Welcome to my blog.&lt;/p&gt;
+&lt;h3 id=&quot;自我介绍&quot;&gt;&lt;a href=&quot;#自我介绍&quot; class=&quot;headerlink&quot; title=&quot;自我介绍&quot;&gt;&lt;/a&gt;自我介绍&lt;/h3&gt;&lt;pre&gt;&lt;code class=&quot;一个喜爱编程的文艺少年```&quot;&gt;
+
+### 个人名言
+
+```生活一半记忆，一半继续
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;联系方式&quot;&gt;&lt;a href=&quot;#联系方式&quot; class=&quot;headerlink&quot; title=&quot;联系方式&quot;&gt;&lt;/a&gt;联系方式&lt;/h3&gt;&lt;p&gt;&lt;code&gt;请邮件给我：houshuai0816@126.com&lt;/code&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h2 id=&quot;title-创建博客第一天&quot;&gt;&lt;a href=&quot;#title-创建博客第一天&quot; class=&quot;headerlink&quot; title=&quot;title: 创建博客第一天&quot;&gt;&lt;/a&gt;title: 创建博客第一天&lt;/h2&gt;&lt;p&gt;Welcome to my blog.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
