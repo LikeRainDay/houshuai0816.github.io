@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/houshuai0816/"/>
-  <updated>2016-06-06T00:23:07.248Z</updated>
+  <updated>2016-06-06T00:43:12.280Z</updated>
   <id>https://github.com/houshuai0816/</id>
   
   <author>
@@ -16,15 +16,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>新文章</title>
+    <title></title>
     <link href="https://github.com/houshuai0816/2016/06/06/%E6%96%B0%E6%96%87%E7%AB%A0/"/>
     <id>https://github.com/houshuai0816/2016/06/06/新文章/</id>
-    <published>2016-06-06T00:23:07.000Z</published>
-    <updated>2016-06-06T00:23:07.248Z</updated>
+    <published>2016-06-06T00:23:07.248Z</published>
+    <updated>2016-06-06T00:43:12.280Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;hr&gt;
+&lt;p&gt;title: 新文章&lt;br&gt;date: 2016-06-06 08:23:07&lt;/p&gt;
+&lt;h2 id=&quot;tags&quot;&gt;&lt;a href=&quot;#tags&quot; class=&quot;headerlink&quot; title=&quot;tags:&quot;&gt;&lt;/a&gt;tags:&lt;/h2&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;#站在巨人的肩膀&lt;/p&gt;
+&lt;h2 id=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot;&gt;&lt;a href=&quot;#如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot; class=&quot;headerlink&quot; title=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot;&gt;&lt;/a&gt;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&lt;/h2&gt;&lt;p&gt;##开源框架&lt;br&gt;自己在工作和学习中，因为种种需求而找寻的一些开源的框架，不是说拥抱开源就不自己去理解，那么你站在巨人的肩膀上，看到的只是一片一片的云彩，看不到美丽的田野，和高飞的鸟儿。&lt;/p&gt;
+&lt;h1 id=&quot;butterknife&quot;&gt;&lt;a href=&quot;#butterknife&quot; class=&quot;headerlink&quot; title=&quot;* butterknife&quot;&gt;&lt;/a&gt;* &lt;a href=&quot;https://github.com/JakeWharton/butterknife&quot;&gt;butterknife&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;  中文译：黄油刀。做Android开发的应该对作者并不陌生吧，那就是大名鼎鼎的JakeWharton，&lt;a href=&quot;https://github.com/JakeWharton&quot;&gt;JakeWharton在GitHub上的主页&lt;/a&gt; &lt;img src=&quot;https://github.com/JakeWharton/butterknife/raw/master/website/static/logo.png&quot; alt=&quot;butterknife&quot;&gt;&lt;/p&gt;
+&lt;p&gt;ButterKnife 优势：&lt;br&gt;1.强大的View绑定和Click事件处理功能，简化代码，提升开发效率&lt;br&gt;2.方便的处理Adapter里的ViewHolder绑定问题&lt;br&gt;3.运行时不会影响APP效率，使用配置方便&lt;br&gt;4.代码清晰，可读性强&lt;/p&gt;
+&lt;p&gt;使用心得：&lt;br&gt;1.Activity ButterKnife.bind(this);必须在setContentView();之后，且父类bind绑定后，子类不需要再bind&lt;br&gt;2.Fragment ButterKnife.bind(this, mRootView);&lt;br&gt;3.属性布局不能用private or static 修饰，否则会报错&lt;br&gt;4.setContentView()不能通过注解实现。（其他的有些注解框架可以）&lt;/p&gt;
+&lt;h1 id=&quot;volley&quot;&gt;&lt;a href=&quot;#volley&quot; class=&quot;headerlink&quot; title=&quot;* volley&quot;&gt;&lt;/a&gt;* &lt;a href=&quot;https://github.com/mcxiaoke/android-volley&quot;&gt;volley&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Volley是一个由Google官方推出的网络通信库，它使得Android进行网络请求时更加方便、快速、健壮，同时对网络图片加载也提供了良好的支持。如果你想了解&lt;a href=&quot;http://blog.csdn.net/guolin_blog/article/details/17482095&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;郭霖博客&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;ViewPagerIndicator&quot;&gt;&lt;a href=&quot;#ViewPagerIndicator&quot; class=&quot;headerlink&quot; title=&quot;* ViewPagerIndicator&quot;&gt;&lt;/a&gt;* &lt;a href=&quot;https://github.com/JakeWharton/ViewPagerIndicator&quot;&gt;ViewPagerIndicator&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;利用开源控件ViewPagerIndicator实现Tab的方式，是各种新闻客户端等APP开发最常用的。&lt;br&gt;&lt;img src=&quot;http://static.oschina.net/uploads/img/201403/14220432_afb0.png&quot; alt=&quot;这里写图片描述&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;picasso&quot;&gt;&lt;a href=&quot;#picasso&quot; class=&quot;headerlink&quot; title=&quot;* picasso&quot;&gt;&lt;/a&gt;* &lt;a href=&quot;https://github.com/square/picasso&quot;&gt;picasso&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;Picasso 其实是 Android 系统的图片下载和缓存类库，是Square开源的一个用于Android系统下载和缓存图片的项目。从此告别OOM&lt;br&gt;  &lt;img src=&quot;https://github.com/square/picasso/raw/master/website/static/sample.png&quot; alt=&quot;这里写图片描述&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;EventBus&quot;&gt;&lt;a href=&quot;#EventBus&quot; class=&quot;headerlink&quot; title=&quot;  * EventBus&quot;&gt;&lt;/a&gt;  * &lt;a href=&quot;https://github.com/greenrobot/EventBus&quot;&gt;EventBus&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;  EventBus是一款针对Android优化的发布/订阅事件总线。主要功能是替代Intent,Handler,BroadCast在Fragment，Activity，Service，线程之间传递消息.优点是开销小，代码更优雅。以及将发送者和接收者解耦。&lt;br&gt;  结构视图为：&lt;br&gt;  &lt;img src=&quot;https://github.com/greenrobot/EventBus/raw/master/EventBus-Publish-Subscribe.png&quot; alt=&quot;这里写图片描述&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;retrofit&quot;&gt;&lt;a href=&quot;#retrofit&quot; class=&quot;headerlink&quot; title=&quot;  * retrofit&quot;&gt;&lt;/a&gt;  * &lt;a href=&quot;https://github.com/square/retrofit&quot;&gt;retrofit&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;　retrofit是由square公司开发的。square在github上发布了很多优秀的Android开源项目。例如:otto(事件总线),leakcanary(排查内存泄露),android-times-square(日历控件),dagger(依赖注入),picasso(异步加载图片),okhttp(网络请求),retrofit(网络请求)等等。更多square上的开源项目我们可以去square的GitHub进行查看。这次就来介绍一下retrofit的一些基本用法。retrofit是REST安卓客户端请求库。使用retrofit可以进行GET，POST，PUT，DELETE等请求方式。&lt;a href=&quot;http://blog.csdn.net/ljd2038/article/details/51046512&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;比较好的分析讲解博客地址&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;Rxjava&quot;&gt;&lt;a href=&quot;#Rxjava&quot; class=&quot;headerlink&quot; title=&quot;* Rxjava&quot;&gt;&lt;/a&gt;* &lt;a href=&quot;https://github.com/search?utf8=%E2%9C%93&amp;amp;q=RxJava&amp;amp;type=Repositories&amp;amp;ref=searchresults&quot;&gt;Rxjava&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;异步很简洁，&lt;a href=&quot;http://blog.csdn.net/smart_ljh/article/details/51304018&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一个Rxjava介绍，入门不错&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;今天先写到这 ，有空继续写。&lt;/p&gt;
+</content>
     
     <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;title: 新文章&lt;br&gt;date: 2016-06-06 08:23:07&lt;/p&gt;
+&lt;h2 id=&quot;tags&quot;&gt;&lt;a href=&quot;#tags&quot; class=&quot;headerlink&quot; title=&quot;tags:&quot;&gt;&lt;/a&gt;tags:&lt;/h2&gt;&lt;p&gt;[TOC]&lt;/p
     
     </summary>
     
