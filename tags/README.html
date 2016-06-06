@@ -15,19 +15,21 @@
 
 
 
-<meta name="description" content="title: tagsdate: 2016-06-06 15:13:38
-type: “about”大家好">
+<meta name="description" content="Word Cloud LayoutThis is a Wordle-inspired word cloud layout writtenin JavaScript. It uses HTML5 canvas and sprite masks to achievenear-interactive speeds.
+See here for an interactivedemonstration alo">
 <meta property="og:type" content="website">
 <meta property="og:title" content="喜欢雨天的我">
-<meta property="og:url" content="http://yoursite.com/child/about/index.html">
+<meta property="og:url" content="http://yoursite.com/child/tags/README.html">
 <meta property="og:site_name" content="喜欢雨天的我">
-<meta property="og:description" content="title: tagsdate: 2016-06-06 15:13:38
-type: “about”大家好">
-<meta property="og:updated_time" content="2016-06-06T07:53:04.709Z">
+<meta property="og:description" content="Word Cloud LayoutThis is a Wordle-inspired word cloud layout writtenin JavaScript. It uses HTML5 canvas and sprite masks to achievenear-interactive speeds.
+See here for an interactivedemonstration alo">
+<meta property="og:image" content="http://www.jasondavies.com/wordcloud/amazing.png">
+<meta property="og:updated_time" content="2015-10-14T19:28:44.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="喜欢雨天的我">
-<meta name="twitter:description" content="title: tagsdate: 2016-06-06 15:13:38
-type: “about”大家好">
+<meta name="twitter:description" content="Word Cloud LayoutThis is a Wordle-inspired word cloud layout writtenin JavaScript. It uses HTML5 canvas and sprite masks to achievenear-interactive speeds.
+See here for an interactivedemonstration alo">
+<meta name="twitter:image" content="http://www.jasondavies.com/wordcloud/amazing.png">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -263,8 +265,8 @@ type: “about”大家好">
       <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2016-06-06T07:53:12.106Z" itemprop="datePublished">2016-06-06</time>
+      <a href="/tags/README.html" class="article-date">
+      <time datetime="2016-06-06T07:22:13.467Z" itemprop="datePublished">2016-06-06</time>
 </a>
     </div>
   
@@ -295,9 +297,58 @@ type: “about”大家好">
 
 
           
-        <hr>
-<p>title: tags<br>date: 2016-06-06 15:13:38</p>
-<h2 id="type-“about”"><a href="#type-“about”" class="headerlink" title="type: “about”"></a>type: “about”</h2><p>大家好</p>
+        <h1 id="Word-Cloud-Layout"><a href="#Word-Cloud-Layout" class="headerlink" title="Word Cloud Layout"></a>Word Cloud Layout</h1><p>This is a <a href="http://www.wordle.net/" target="_blank" rel="external">Wordle</a>-inspired word cloud layout written<br>in JavaScript. It uses HTML5 canvas and sprite masks to achieve<br>near-interactive speeds.</p>
+<p>See <a href="http://www.jasondavies.com/wordcloud/" target="_blank" rel="external">here</a> for an interactive<br>demonstration along with implementation details.</p>
+<p><img src="http://www.jasondavies.com/wordcloud/amazing.png" alt="Example cloud of Twitter search results for “amazing”"></p>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>See the samples in <code>examples/</code>.</p>
+<h2 id="API-Reference"><a href="#API-Reference" class="headerlink" title="API Reference"></a>API Reference</h2><p><a name="cloud" href="#cloud">#</a> d3.layout.<b>cloud</b>()</p>
+<p>Constructs a new cloud layout instance.</p>
+<p><a name="on" href="#on">#</a> <b>on</b>(<i>type</i>, <i>listener</i>)</p>
+<p>Registers the specified <em>listener</em> to receive events of the specified <em>type</em><br>from the layout. Currently, only “word” and “end” events are supported.</p>
+<p>A “word” event is dispatched every time a word is successfully placed.<br>Registered listeners are called with a single argument: the word object that<br>has been placed.</p>
+<p>An “end” event is dispatched when the layout has finished attempting to place<br>all words.  Registered listeners are called with two arguments: an array of the<br>word objects that were successfully placed, and a <em>bounds</em> object of the form<br><code>[{x0, y0}, {x1, y1}]</code> representing the extent of the placed objects.</p>
+<p><a name="start" href="#start">#</a> <b>start</b>()</p>
+<p>Starts the layout algorithm.  This initialises various attributes on the word<br>objects, and attempts to place each word, starting with the largest word.<br>Starting with the centre of the rectangular area, each word is tested for<br>collisions with all previously-placed words.  If a collision is found, it tries<br>to place the word in a new position along the spiral.</p>
+<p><strong>Note:</strong> if a word cannot be placed in any of the positions attempted along<br>the spiral, it is <strong>not included</strong> in the final word layout.  This may be<br>addressed in a future release.</p>
+<p><a name="stop" href="#stop">#</a> <b>stop</b>()</p>
+<p>Stops the layout algorithm.</p>
+<p><a name="timeInterval" href="#timeInterval">#</a> <b>timeInterval</b>([<i>time</i>])</p>
+<p>Internally, the layout uses <code>setInterval</code> to avoid locking up the browser’s<br>event loop.  If specified, <strong>time</strong> is the maximum amount of time that can be<br>spent during the current timestep.  If not specified, returns the current<br>maximum time interval, which defaults to <code>Infinity</code>.</p>
+<p><a name="words" href="#words">#</a> <b>words</b>([<i>words</i>])</p>
+<p>If specified, sets the <strong>words</strong> array.  If not specified, returns the current<br>words array, which defaults to <code>[]</code>.</p>
+<p><a name="size" href="#size">#</a> <b>size</b>([<i>size</i>])</p>
+<p>If specified, sets the rectangular <code>[width, height]</code> of the layout.  If not<br>specified, returns the current size, which defaults to <code>[1, 1]</code>.</p>
+<p><a name="font" href="#font">#</a> <b>font</b>([<i>font</i>])</p>
+<p>If specified, sets the <strong>font</strong> accessor function, which indicates the font<br>face for each word.  If not specified, returns the current font accessor<br>function, which defaults to <code>&quot;serif&quot;</code>.<br>A constant may be specified instead of a function.</p>
+<p><a name="fontStyle" href="#fontStyle">#</a> <b>fontStyle</b>([<i>fontStyle</i>])</p>
+<p>If specified, sets the <strong>fontStyle</strong> accessor function, which indicates the<br>font style for each word.  If not specified, returns the current fontStyle<br>accessor function, which defaults to <code>&quot;normal&quot;</code>.<br>A constant may be specified instead of a function.</p>
+<p><a name="fontWeight" href="#fontWeight">#</a> <b>fontWeight</b>([<i>fontWeight</i>])</p>
+<p>If specified, sets the <strong>fontWeight</strong> accessor function, which indicates the<br>font weight for each word.  If not specified, returns the current fontWeight<br>accessor function, which defaults to <code>&quot;normal&quot;</code>.<br>A constant may be specified instead of a function.</p>
+<p><a name="fontSize" href="#fontSize">#</a> <b>fontSize</b>([<i>fontSize</i>])</p>
+<p>If specified, sets the <strong>fontSize</strong> accessor function, which indicates the<br>numerical font size for each word.  If not specified, returns the current<br>fontSize accessor function, which defaults to:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123; <span class="keyword">return</span> <span class="built_in">Math</span>.sqrt(d.value); &#125;</span><br></pre></td></tr></table></figure>
+<p>A constant may be specified instead of a function.</p>
+<p><a name="rotate" href="#rotate">#</a> <b>rotate</b>([<i>rotate</i>])</p>
+<p>If specified, sets the <strong>rotate</strong> accessor function, which indicates the<br>rotation angle (in degrees) for each word.  If not specified, returns the<br>current rotate accessor function, which defaults to:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="keyword">return</span> (~~(<span class="built_in">Math</span>.random() * <span class="number">6</span>) - <span class="number">3</span>) * <span class="number">30</span>; &#125;</span><br></pre></td></tr></table></figure>
+<p>A constant may be specified instead of a function.</p>
+<p><a name="text" href="#text">#</a> <b>text</b>([<i>text</i>])</p>
+<p>If specified, sets the <strong>text</strong> accessor function, which indicates the text for<br>each word.  If not specified, returns the current text accessor function, which<br>defaults to:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">d</span>) </span>&#123; <span class="keyword">return</span> d.text; &#125;</span><br></pre></td></tr></table></figure>
+<p>A constant may be specified instead of a function.</p>
+<p><a name="spiral" href="#spiral">#</a> <b>spiral</b>([<i>spiral</i>])</p>
+<p>If specified, sets the current type of spiral used for positioning words.  This<br>can either be one of the two built-in spirals, “archimedean” and “rectangular”,<br>or an arbitrary spiral generator can be used, of the following form:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// size is the [width, height] array specified in cloud.size</span></span><br><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params">size</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// t indicates the current step along the spiral; it may monotonically</span></span><br><span class="line">  <span class="comment">// increase or decrease indicating clockwise or counterclockwise motion.</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">t</span>) </span>&#123; <span class="keyword">return</span> [x, y]; &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>If not specified, returns the current spiral generator, which defaults to the<br>built-in “archimedean” spiral.</p>
+<p><a name="padding" href="#padding">#</a> <b>padding</b>([<i>padding</i>])</p>
+<p>If specified, sets the <strong>padding</strong> accessor function, which indicates the<br>numerical padding for each word.  If not specified, returns the current<br>padding, which defaults to 1.</p>
+<p><a name="random" href="#random">#</a> <b>random</b>([<i>random</i>])</p>
+<p>If specified, sets the internal random number generator, used for selecting the<br>initial position of each word, and the clockwise/counterclockwise direction of<br>the spiral for each word.  This should return a number in the range <code>[0, 1)</code>.</p>
+<p>If not specified, returns the current random number generator, which defaults<br>to <code>Math.random</code>.</p>
+<p><a name="canvas" href="#canvas">#</a> <b>canvas</b>([<i>canvas</i>])</p>
+<p>If specified, sets the <strong>canvas</strong> generator function, which is used internally<br>to draw text.  If not specified, returns the current generator function, which<br>defaults to:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="keyword">return</span> <span class="built_in">document</span>.createElement(<span class="string">"canvas"</span>); &#125;</span><br></pre></td></tr></table></figure>
+<p>When using Node.js, you will almost definitely override this default, e.g.<br>using the <a href="https://www.npmjs.com/package/canvas" target="_blank" rel="external">canvas module</a>.</p>
 
       
     </div>
