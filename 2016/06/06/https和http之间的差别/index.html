@@ -7,7 +7,7 @@
 
     
 
-    <title>归档：2016/6 | </title>
+    <title>https和http之间的差别 | </title>
     <meta name="author" content="Hou Shuai">
     
     <meta name="description" content="生活一半记忆，一半继续">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="https和http之间的差别"/>
     <meta property="og:site_name" content="喜欢雨天的我"/>
 
     
@@ -193,58 +193,76 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
-        <span class="breadcrumb">当前位置（归档）</span>
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
         
 
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>https和http之间的差别</h1>
+    
 
 
-    <ul class="collapsible mt-0" data-collapsible="accordion">
-        
-        
-            <li>
-                <div class="collapsible-header active">
-                    <i class="fa fa-archive"></i>2016
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/2016/06/06/开源框架/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-06-06T05:11:05.000Z">2016-06-06</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                开源框架
-                            </a>
-                        
-                            <a href="/2016/06/06/MarkDown初步入门攻略/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-06-06T05:09:37.000Z">2016-06-06</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                MarkDown初步入门攻略
-                            </a>
-                        
-                            <a href="/2016/06/06/https和http之间的差别/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-06-06T05:08:16.000Z">2016-06-06</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                https和http之间的差别
-                            </a>
-                        
-                            <a href="/2016/06/06/AndroidStudio快捷键/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-06-06T05:05:56.000Z">2016-06-06</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                AndroidStudio快捷键
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
-        
-    </ul>
+            </div>
+            <time class="pink-link-context" datetime="2016-06-06T05:08:16.000Z"><a href="/2016/06/06/https和http之间的差别/">2016-06-06</a></time>
+
+            
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Https于Http之间的差异"><span class="section table-of-contents-text">Https于Http之间的差异</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <h1 id="Https于Http之间的差异"><a href="#Https于Http之间的差异" class="headerlink" title="Https于Http之间的差异"></a><strong>Https于Http之间的差异</strong></h1><p>最近几天看了有关网络通信的文章，结合自己android项目下，有关网络安全，现在想要介绍一下他们之间的差别，并不是http多了一个小s那么简单，就如同多了一个保障加了一份security。那么大家就请跟着我的步伐一切来认识一下哥哥和弟弟。</p>
+<hr>
+<p>##Http作为哥哥的自我简介</p>
+<ul>
+<li>HTTP是一个属于应用层的面向对象的协议，由于其简捷、快速的方式，适用于分布式超媒体信息系统。它于1990年提出，经过几年的使用与发展，得到不断地完善和扩展。目前在WWW中使用的是HTTP/1.0的第六版，HTTP/1.1的规范化工作正在进行之中，而且HTTP-NG(Next Generation of HTTP)的建议已经提出。<br>HTTP协议的主要特点可概括如下：<br>1.支持客户/服务器模式。<br>2.简单快速：客户向服务器请求服务时，只需传送请求方法和路径。请求方法常用的有GET、HEAD、POST。每种方法规定了客户与服务器联系的类型不同。由于HTTP协议简单，使得HTTP服务器的程序规模小，因而通信速度很快。<br>3.灵活：HTTP允许传输任意类型的数据对象。正在传输的类型由Content-Type加以标记。<br>4.无连接：无连接的含义是限制每次连接只处理一个请求。服务器处理完客户的请求，并收到客户的应答后，即断开连接。采用这种方式可以节省传输时间。<br>5.无状态：HTTP协议是无状态协议。无状态是指协议对于事务处理没有记忆能力。缺少状态意味着如果后续处理需要前面的信息，则它必须重传，这样可能导致每次连接传送的数据量增大。另一方面，在服务器不需要先前信息时它的应答就较快。</li>
+</ul>
+<hr>
+<p>##Https作为弟弟的自我简介</p>
+<ul>
+<li>它是一个安全通信通道，它基于HTTP开发，用于在客户计算机和服务器之间交换信息。它使用安全套接字层(SSL)进行信息交换，简单来说它是HTTP的安全版。<br>它是由Netscape开发并内置于其浏览器中，用于对数据进行压缩和解压操作，并返回网络上传送回的结果。HTTPS实际上应用了Netscape的安全全套接字层（SSL）作为HTTP应用层的子层。（HTTPS使用端口443，而不是象HTTP那样使用端口80来和TCP/IP进行通信。）SSL使用40 位关键字作为RC4流加密算法，这对于商业信息的加密是合适的。HTTPS和SSL支持使用X.509数字认证，如果需要的话用户可以确认发送者是谁。</li>
+</ul>
+<hr>
+<p>##弟弟为何比哥哥更安全</p>
+<ul>
+<li>HTTPS和HTTP的区别：<br>https协议需要到ca申请证书，一般免费证书很少，需要交费。<br>http是超文本传输协议，信息是明文传输，https 则是具有安全性的ssl加密传输协议<br>http和https使用的是完全不同的连接方式用的端口也不一样,前者是80,后者是443。<br>http的连接很简单,是无状态的<br>HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议 要比http协议安全</li>
+<li>HTTPS解决的问题：<br>1 . 信任主机的问题.采用https 的server 必须从CA 申请一个用于证明服务器用途类型的证书. 改证书只有用于对应的server 的时候,客户度才信任次主机. 所以目前所有的银行系统网站,关键部分应用都是https 的. 客户通过信任该证书,从而信任了该主机. 其实这样做效率很低,但是银行更侧重安全. 这一点对我们没有任何意义,我们的server ,采用的证书不管自己issue 还是从公众的地方issue, 客户端都是自己人,所以我们也就肯定信任该server.<br>2 . 通讯过程中的数据的泄密和被窜改</li>
+</ul>
+<ol>
+<li>一般意义上的https, 就是 server 有一个证书.<br>a) 主要目的是保证server 就是他声称的server. 这个跟第一点一样.<br>b) 服务端和客户端之间的所有通讯,都是加密的.<br>i. 具体讲,是客户端产生一个对称的密钥,通过server 的证书来交换密钥. 一般意义上的握手过程.<br>ii. 加下来所有的信息往来就都是加密的. 第三方即使截获,也没有任何意义.因为他没有密钥. 当然窜改也就没有什么意义了.</li>
+<li>少许对客户端有要求的情况下,会要求客户端也必须有一个证书.<br>a) 这里客户端证书,其实就类似表示个人信息的时候,除了用户名/密码, 还有一个CA 认证过的身份. 应为个人证书一般来说上别人无法模拟的,所有这样能够更深的确认自己的身份.<br>b) 目前少数个人银行的专业版是这种做法,具体证书可能是拿U盘作为一个备份的载体.</li>
+</ol>
+<ul>
+<li>HTTPS 一定是繁琐的.<br>a) 本来简单的http协议,一个get一个response. 由于https 要还密钥和确认加密算法的需要.单握手就需要6/7 个往返.<br>i. 任何应用中,过多的round trip 肯定影响性能.<br>b) 接下来才是具体的http协议,每一次响应或者请求, 都要求客户端和服务端对会话的内容做加密/解密.<br>i. 尽管对称加密/解密效率比较高,可是仍然要消耗过多的CPU,为此有专门的SSL 芯片. 如果CPU 信能比较低的话,肯定会降低性能,从而不能serve 更多的请求.<br>ii. 加密后数据量的影响. 所以，才会出现那么多的安全认证提示</li>
+</ul>
+<hr>
+<p><strong> 长江一浪推一浪，前浪凉在沙滩上</strong></p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
 
 
 </div>

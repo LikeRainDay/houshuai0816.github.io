@@ -7,7 +7,7 @@
 
     
 
-    <title>归档：2016/6 | </title>
+    <title>AndroidStudio快捷键 | </title>
     <meta name="author" content="Hou Shuai">
     
     <meta name="description" content="生活一半记忆，一半继续">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="AndroidStudio快捷键"/>
     <meta property="og:site_name" content="喜欢雨天的我"/>
 
     
@@ -193,58 +193,87 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
-        <span class="breadcrumb">当前位置（归档）</span>
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
         
 
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>AndroidStudio快捷键</h1>
+    
 
 
-    <ul class="collapsible mt-0" data-collapsible="accordion">
-        
-        
-            <li>
-                <div class="collapsible-header active">
-                    <i class="fa fa-archive"></i>2016
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/2016/06/06/开源框架/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-06-06T05:11:05.000Z">2016-06-06</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                开源框架
-                            </a>
-                        
-                            <a href="/2016/06/06/MarkDown初步入门攻略/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-06-06T05:09:37.000Z">2016-06-06</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                MarkDown初步入门攻略
-                            </a>
-                        
-                            <a href="/2016/06/06/https和http之间的差别/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-06-06T05:08:16.000Z">2016-06-06</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                https和http之间的差别
-                            </a>
-                        
-                            <a href="/2016/06/06/AndroidStudio快捷键/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-06-06T05:05:56.000Z">2016-06-06</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                AndroidStudio快捷键
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
-        
-    </ul>
+            </div>
+            <time class="pink-link-context" datetime="2016-06-06T05:05:56.000Z"><a href="/2016/06/06/AndroidStudio快捷键/">2016-06-06</a></time>
+
+            
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>我就针对一些常用的Android studio的live templates进行了一下汇总，<br>大家觉得有用的话就存下来吧，如果不熟悉的话经常去live pemplate进行查询有点麻烦，用熟悉了后就会好很多啦<br>Android studio 默认的是按Tab 自动生成代码块的，用户可以自己在setting–&gt;Live Templates里面进行设置expand style</p>
+<p>////输出打印<br>Groovy(常规部分)—-&gt;<br>serr —&gt;System.err.println(“example”)<br>souf —&gt;printf “example”<br>sout —&gt;println “example”<br>soutm —&gt;System.out.println(“MainActivity.onCreate”);//当前类的当前方法名<br>soutp —&gt;System.out.println(“savedInstanceState = [“ + savedInstanceState + “]”);//这个好，可以打印出当前方法的所有参数列表及其值<br>soutv —&gt;System.out.println(“params”,params);//即 你可以输出打印一个变量值<br>//（常规的代码块儿）<br>Iteractions—&gt;//快速生成代码块儿<br>fori —&gt;for (int i = 0; i &lt; ; i++) {}<br>itar —&gt;for (int i = 0; i &lt; Array.length; i++) { int i1 = Array[i];}//遍历数组<br>itco —&gt;for (Iterator iterator = collection.iterator(); iterator.hasNext(); ) {<br>Object next = iterator.next();<br>}//这个是遍历一个容器变量的，直接让容器返回一个iterator进行遍历<br>iten —&gt;while (枚举类.hasMoreElements()) { Object nextElement = 枚举类.nextElement(); }//enumeration 是一个枚举类接口来着。遍历枚举内容<br>iter —&gt;for (int i : FOCUSED_STATE_SET) {…}//遍历选中状态下的set<br>itit —&gt;while (iterator.hasNext()) { Object next = iterator.next(); }//获取到了迭代器对象后，对迭代器进行遍历操作<br>itli —&gt;for (int i = 0; i &lt; list.size(); i++) { Object o = list.get(i); }//遍历list对象里面的内容<br>ritar —&gt;for (int i = Array.length - 1; i &gt;= 0; i–) { int i1 = FOCUSED_STATE_SET[i]; }//倒叙遍历数组<br>//其他的（综合）<br>geti —&gt;public static MainActivity getInstance() { return ; }//获取到当前的实例 的代码模板<br>ifn —&gt;if (某变量 == null) {….}//生成if null代码块儿<br>inn —&gt;if (某变量 != null) {….}//生成if not null代码块儿<br>inst —&gt;if ($EXPR$ instanceof $TYPE$) { $TYPE$ $VAR1$ = ($TYPE$)$EXPR$; $END$ }//判断某变量是不是某个类的实例对象<br>lazy —&gt;if (savedInstanceState == null) { savedInstanceState = new Bundle(); }//执行延迟初始化，就是对象直到用的时候才进行初始化操作<br>mn —&gt;var1 = Math.min(var2,var3);//得到比较两个变量值小的代码块<br>mx —&gt;var1 = Math.max(var2,var3);//得到比较两个变量值大的代码块<br>psvm —&gt;public static void main(String[] args){ 。。。。 }//生成一个main()函数的代码块<br>toar —&gt;something.toArray(new collection[collection.size()])//这个是生成一个代码块用于把collection的对象存储到一个数组里面去.实用！<br>//普通的代码（修饰符部分的）<br>psf —&gt;public static final<br>psfi —&gt;public static final int<br>psfs —&gt;public static final String<br>St —&gt;String<br>thr —&gt;throw new<br>IDEA 快捷键</p>
+<p>这是从IDEA官网下载的IDEA keymap Windows/Linux，中文我会慢慢补充上去。<br>因为AS是基于IDEA社区版开发的，所以快捷键都AS同样适用。<br>IntelliJ IDEA Default Keymap<br>To find any action inside the IDE use<br>Find Action     Ctrl+Shift+A/ A    查找快捷键，action快捷入口的快捷键</p>
+<p>Editing 编辑<br>Ctrl + Space    Basic code completion (the name of any class,method or variable)    基本的代码补全<br>Ctrl + Shift + Space    Smart code completion (filters the list of methodsand variables by expected type)    智能代码补全<br>Ctrl + Shift + Enter    Complete statement    补全当前语句<br>Ctrl + P    Parameter info (within method call arguments)    显示函数的参数信息<br>Ctrl + Q    Quick documentation lookup    快速文档查找<br>Shift + F1    External Doc    外部文档<br>Ctrl + mouse over code     Brief Info    简要信息显示<br>Ctrl + F1    Show descriptions of error or warning at caret    显示错误或警告的说明<br>Alt + Insert    Generate code… (Getters, Setters, Constructors,hashCode/equals, toString)    生成（Getters, Setters, Constructors,hashCode/equals, toString）代码<br>Ctrl + O    Override methods    重写方法<br>Ctrl + I    Implement methods    实现方法<br>Ctrl + Alt + T    Surround with… (if..else, try..catch, for,synchronized, etc.)    用if..else, try..catch, for,synchronized等环绕代码块<br>Ctrl + /     Comment/uncomment with line comment    注释/取消注释代码行<br>Ctrl + Shift + /    Comment/uncomment with block comment    注释/取消注释代码块<br>Ctrl + W     Select successively increasing code blocks    依次选择更多的代码块<br>Ctrl + Shift + W         Decrease current selection to previous state    依次减少选择的代码块<br>Alt + Q     Context info    </p>
+<p>Alt + Enter     Show intention actions and quick-fixes    显示意图行动和快速修复<br>Ctrl + Alt + L    Reformat code    重新格式化代码<br>Ctrl + Alt + O    Optimize imports    优化导入的import<br>Ctrl + Alt + I     Auto-indent line(s)    自动缩进行<br>Tab / Shift + Tab     Indent/unindent selected lines    缩进/取消缩进<br>/Ctrl + X or Shift + Delete     Cut current line or selected block to clipboard    剪切当前行或者选中的代码段到剪切板<br>Ctrl + C or Ctrl + Insert    Copy current line or selected block to clipboard    复制当前行或者选中的代码段到剪贴板<br>Ctrl + V or Shift + Insert    Paste from clipboard    从剪切板粘贴<br>Ctrl + Shift + V    Paste from recent buffers…    粘贴最近复制的内容<br>Ctrl + D    Duplicate current line or selected block    复制当前行或选中的代码<br>Ctrl + Y    Delete line at caret    删除行<br>Ctrl + Shift + J    Smart line join    智能合并行<br>Ctrl + Enter    Smart line split    智能分割行<br>Shift + Enter    Start new line    新建一行<br>Ctrl + Shift + U    Toggle case for word at caret or selected block    将选中代码块转为小写<br>Ctrl + Shift + ] / [     Select till code block end/start    向前/向后选中代码段<br>Ctrl + Delete    Delete to word end    向后删除一个单词<br>Ctrl + Backspace    Delete to word start    向前删除一个单词<br>Ctrl + NumPad+/-    Expand/collapse code block    展开/折叠代码段<br>Ctrl + Shift + NumPad+    Expand all    全部展开<br>Ctrl + Shift + NumPad-     Collapse all    全部折叠<br>Ctrl + F4     Close active editor tab    关闭当前标签<br>Search/Replace 查找/替换<br>Double Shift    Search everywhere    搜索任何地方的任何东西<br>Ctrl + F    Find    查找<br>F3            Find next    查找下一个<br>Shift + F3    Find previous    查找上一个<br>Ctrl + R     Replace    替换<br>Ctrl + Shift + F    Find in path    在路径中查找<br>Ctrl + Shift + R    Replace in path    在路径中替换<br>Ctrl + Shift + S    Search structurally (Ultimate Edition only)    查找机构（商业版有效）<br>Ctrl + Shift + M    Replace structurally (Ultimate Edition only)    替换结构（商业版有效）</p>
+<p>Usage Search 查找使用<br>Alt + F7 / Ctrl + F7    Find usages / Find usages in file    查找使用<br>Ctrl + Shift + F7    Highlight usages in file    在文件中高亮被使用处<br>Ctrl + Alt + F7    Show usages    显示使用</p>
+<p>Compile and Run 编译和运行<br>Ctrl + F9    Make project (compile modifed and dependent)    编译项目<br>Ctrl + Shift + F9    Compile selected file, package or module    编译选中的文件、包或者木块<br>Alt + Shift + F10    Select configuration and run    选择配置然后运行<br>Alt + Shift + F9    Select configuration and debug    选择哦诶之然后调试<br>Shift + F10    Run    运行<br>Shift + F9    Debug    调试<br>Ctrl + Shift + F10    Run context configuration from editor    </p>
+<p>Debugging 调试<br>F8    Step over    跳过函数执行<br>F7    Step into    单步执行<br>Shift + F7    Smart step into    智能但不执行<br>Shift + F8    Step out    跳出函数执行<br>Alt + F9    Run to cursor    运行到光标处<br>Alt + F8    Evaluate expression    </p>
+<p>F9    Resume program    继续执行<br>Ctrl + F8    Toggle breakpoint    切换断点<br>Ctrl + Shift + F8    View breakpoints    查看断点</p>
+<p>Navigation 导航<br>Ctrl + N    Go to class    查找/跳到类<br>Ctrl + Shift + N    Go to file    查找文件<br>Ctrl + Alt + Shift + N    Go to symbol    查找符号<br>Alt + Right/Left    Go to next/previous editor tab    </p>
+<p>F12    Go back to previous tool window    </p>
+<p>Esc    Go to editor (from tool window)    </p>
+<p>Shift + Esc    Hide active or last active window    </p>
+<p>Ctrl + Shift + F4    Close active run/messages/find/… tab    </p>
+<p>Ctrl + G    Go to line    </p>
+<p>Ctrl + E     Recent files popup        最近打开的文件<br>Ctrl + Alt + Left/Right    Navigate back/forward    回到上一步/下一步编辑的地方<br>Ctrl + Shift + Backspace    Navigate to last edit location    回到最后编辑的地方<br>Alt + F1    Select current file or symbol in any view    在任意视图中选中当前文件或者符号<br>Ctrl + B or Ctrl + Click    Go to declaration    到变量定义处<br>Ctrl + Alt + B    Go to implementation(s)    到方法的实现处<br>Ctrl + Shift + I    Open quick definition lookup    打开定义快速查找<br>Ctrl + Shift + B    Go to type declaration    跳转到方法定义处<br>Ctrl + U    Go to super-method/super-class    跳转到父方法/父类<br>Alt + Up/Down    Go to previous/next method    跳转到上一个/下一个方法<br>Ctrl + ] / [    Move to code block end/start    跳到代码段的开始/结尾<br>Ctrl + F12    File structure popup    弹出文件结构视图<br>Ctrl + H    Type hierarchy    类型的层次结构？<br>Ctrl + Shift + H    Method hierarchy    方法的层次结构？<br>Ctrl + Alt + H    Call hierarchy    调用的层次结构（查找方法/符号的调用方）<br>F2 / Shift + F2    Next/previous highlighted error    下一个（上一个）高亮的错误<br>F4 / Ctrl + Enter    Edit source / View source    编辑/查看文件源码<br>Alt + Home    Show navigation bar    显示导航栏<br>F11    Toggle bookmark    增加书签<br>Ctrl + F11    Toggle bookmark with mnemonic    增加带符号的书签<br>Ctrl + #[0-9]    Go to numbered bookmark    跳到标记数字的书签<br>Shift + F11    Show bookmarks    显示书签</p>
+<p>Refactoring 代码重构<br>F5    Copy    复制<br>F6    Move    移动<br>Alt + Delete    Safe Delete    安全删除<br>Shift + F6    Rename    重命名变量/方法名<br>Ctrl + F6    Change Signature    改变<br>Ctrl + Alt + N    Inline    </p>
+<p>Ctrl + Alt + M    Extract Method    </p>
+<p>Ctrl + Alt + V    Extract Variable    </p>
+<p>Ctrl + Alt + F    Extract Field    </p>
+<p>Ctrl + Alt + C    Extract Constant    </p>
+<p>Ctrl + Alt + P    Extract Parameter    </p>
+<p>VCS/Local History 版本管理/本地历史<br>Ctrl + K    Commit project to VCS    </p>
+<p>Ctrl + T    Update project from VCS    </p>
+<p>Alt + Shift + C    View recent changes    查看最近更改的内容<br>Alt + BackQuote (`)    ‘VCS’ quick popup    </p>
+<p>Live Templates 动态模板<br>Ctrl + Alt + J    Surround with Live Template    环绕的动态模板<br>Ctrl + J    Insert Live Template    插入动态模板<br>iter    Iteration according to Java SDK 1.5 style    </p>
+<p>inst     Check object type with instanceof and downcast it    </p>
+<p>itco    Iterate elements of java.util.Collection    </p>
+<p>itit     Iterate elements of java.util.Iterator    </p>
+<p>itli    Iterate elements of java.util.List    </p>
+<p>psf    public static final    </p>
+<p>thr    throw new    </p>
+<p>General 通用<br>Alt + #[0-9]     Open corresponding tool window    打开相应的工具窗口<br>Ctrl + S     Save all    保存<br>Ctrl + Alt + Y    Synchronize    同步<br>Ctrl + Shift + F12    Toggle maximizing editor    最大化编辑窗口<br>Alt + Shift + F    Add to Favorites    添加到Favorites<br>Alt + Shift + I    Inspect current file with current profile    </p>
+<p>Ctrl + BackQuote (`)     Quick switch current scheme    </p>
+<p>Ctrl + Alt + S    Open Settings dialog    打开设置窗口<br> Ctrl + Alt + Shift + S<br>Open Project Structure dialog    打开项目结构窗口<br>Ctrl + Shift + A     Find Action    查找快捷键<br>Ctrl + Tab    Switch between tabs and tool window    在选项卡和工具窗口之间切换</p>
+<p>与Ubuntu系统快捷键冲突的地方</p>
+<p>Here’s a list of tweaks you need to make with default system key bindings so that they won’t interfere with IntelliJ IDEA actions (listed in brackets).<br>Disable the Shade window action, assigned to Ctrl + Alt + S (Settings dialog)<br>Change or disable the Lock Screen action, assigned to Ctrl + Alt + L (Reformat code)<br>Change or disable the Launch terminal action, assigned to Ctrl + Alt + T (Surround with)<br>Change or disable the Switch to workspace action, assigned to Сtrl + Alt + Arrows (Navigation)<br>Disable the Move window action, assigned to Alt + F7 (Find usages)<br>Change or disable the Resize window action, assigned to Alt + F8 (Evaluate expression</p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
 
 
 </div>
