@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2016-06-06T08:00:40.844Z</updated>
+  <updated>2016-06-06T08:07:31.137Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -16,19 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/child/2016/06/06/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
-    <id>http://yoursite.com/child/2016/06/06/开源框架/</id>
-    <published>2016-06-06T05:11:05.182Z</published>
-    <updated>2016-06-06T08:00:40.844Z</updated>
+    <title>常用的第三方框架</title>
+    <link href="http://yoursite.com/child/2016/06/06/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A1%86%E6%9E%B6/"/>
+    <id>http://yoursite.com/child/2016/06/06/常用的第三方框架/</id>
+    <published>2016-06-06T08:06:17.000Z</published>
+    <updated>2016-06-06T08:07:31.137Z</updated>
     
-    <content type="html">&lt;hr&gt;
-&lt;p&gt;title: 开源框架&lt;br&gt;date: 2016-06-06 13:11:05&lt;br&gt;tags:&lt;br&gt;  -Android&lt;br&gt;  -Web&lt;br&gt;  -Html5&lt;br&gt;categories: 第三方&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;建站&lt;br&gt;toc: true # 生成目录&lt;br&gt;author: 候帅&lt;br&gt;comments:&lt;br&gt;original:&lt;br&gt;permalink: #指定链接&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
+    <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 #站在巨人的肩膀&lt;h2 id=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot;&gt;&lt;a href=&quot;#如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot; class=&quot;headerlink&quot; title=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot;&gt;&lt;/a&gt;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&lt;/h2&gt;##开源框架&lt;br&gt;自己在工作和学习中，因为种种需求而找寻的一些开源的框架，不是说拥抱开源就不自己去理解，那么你站在巨人的肩膀上，看到的只是一片一片的云彩，看不到美丽的田野，和高飞的鸟儿。&lt;/li&gt;
 &lt;/ul&gt;
@@ -47,17 +41,15 @@
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;title: 开源框架&lt;br&gt;date: 2016-06-06 13:11:05&lt;br&gt;tags:&lt;br&gt;  -Android&lt;br&gt;  -Web&lt;br&gt;  -Html5&lt;br&gt;categories: 第三方&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;建站&lt;br&gt;toc: true # 生成目录&lt;br&gt;author: 候帅&lt;br&gt;comments:&lt;br&gt;original:&lt;br&gt;permalink: #指定链接&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
+      &lt;ul&gt;
 &lt;li&gt;
     
     </summary>
     
+      <category term="Android" scheme="http://yoursite.com/child/categories/Android/"/>
+    
+    
+      <category term="-第三方框架" scheme="http://yoursite.com/child/tags/%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A1%86%E6%9E%B6/"/>
     
   </entry>
   
@@ -66,7 +58,7 @@
     <link href="http://yoursite.com/child/2016/06/06/MarkDown%E5%88%9D%E6%AD%A5%E5%85%A5%E9%97%A8%E6%94%BB%E7%95%A5/"/>
     <id>http://yoursite.com/child/2016/06/06/MarkDown初步入门攻略/</id>
     <published>2016-06-06T05:09:37.000Z</published>
-    <updated>2016-06-06T08:01:18.752Z</updated>
+    <updated>2016-06-06T08:08:06.131Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -118,8 +110,10 @@
     
     </summary>
     
+      <category term="Android" scheme="http://yoursite.com/child/categories/Android/"/>
     
-      <category term="android Markdown" scheme="http://yoursite.com/child/tags/android-Markdown/"/>
+    
+      <category term="Markdown" scheme="http://yoursite.com/child/tags/Markdown/"/>
     
   </entry>
   
