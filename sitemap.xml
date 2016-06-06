@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/child/about/index.html</loc>
+    
+    <lastmod>2016-06-06T08:43:44.380Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/child/tags/index.html</loc>
+    
+    <lastmod>2016-06-06T08:42:07.693Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/child/2016/06/06/AndroidStudio%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     
     <lastmod>2016-06-06T08:13:09.031Z</lastmod>
@@ -26,62 +40,6 @@
     <loc>http://yoursite.com/child/2016/06/06/%E5%B8%B8%E7%94%A8%E7%9A%84%E7%AC%AC%E4%B8%89%E6%96%B9%E6%A1%86%E6%9E%B6/</loc>
     
     <lastmod>2016-06-06T08:07:31.137Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/child/about/index.html</loc>
-    
-    <lastmod>2016-06-06T07:53:04.709Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/child/tags/bower.json</loc>
-    
-    <lastmod>2015-10-14T19:28:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/child/tags/examples/browserify.js</loc>
-    
-    <lastmod>2015-10-14T19:28:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/child/tags/index.js</loc>
-    
-    <lastmod>2015-10-14T19:28:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/child/tags/package.json</loc>
-    
-    <lastmod>2015-10-14T19:28:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/child/tags/examples/node.js</loc>
-    
-    <lastmod>2015-10-14T19:28:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/child/tags/build/d3.layout.cloud.js</loc>
-    
-    <lastmod>2015-10-14T19:28:44.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/child/tags/README.html</loc>
-    
-    <lastmod>2015-10-14T19:28:44.000Z</lastmod>
     
   </url>
   
