@@ -1,207 +1,234 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>喜欢雨天的我</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title></title>
+    <meta name="author" content="Hou Shuai">
+    
+    <meta name="description" content="生活一半记忆，一半继续">
+    
+    
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title: AndroidStudio快捷键和缩写生成date: 2016-06-06 09:30:38
-tags:我就针对一些常用的Android studio的live templates进行了一下汇总，大家觉得有用的话就存下来吧，如果不熟悉的话经常去live pemplate进行查询有点麻烦，用熟悉了后就会好很多啦Android studio 默认的是按Tab 自动生成代码块的，用户可以">
-<meta property="og:type" content="article">
-<meta property="og:title" content="喜欢雨天的我">
-<meta property="og:url" content="http://yoursite.com/child/2016/06/06/AndroidStudio快捷键和缩写生成/index.html">
-<meta property="og:site_name" content="喜欢雨天的我">
-<meta property="og:description" content="title: AndroidStudio快捷键和缩写生成date: 2016-06-06 09:30:38
-tags:我就针对一些常用的Android studio的live templates进行了一下汇总，大家觉得有用的话就存下来吧，如果不熟悉的话经常去live pemplate进行查询有点麻烦，用熟悉了后就会好很多啦Android studio 默认的是按Tab 自动生成代码块的，用户可以">
-<meta property="og:updated_time" content="2016-06-06T01:31:05.221Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="喜欢雨天的我">
-<meta name="twitter:description" content="title: AndroidStudio快捷键和缩写生成date: 2016-06-06 09:30:38
-tags:我就针对一些常用的Android studio的live templates进行了一下汇总，大家觉得有用的话就存下来吧，如果不熟悉的话经常去live pemplate进行查询有点麻烦，用熟悉了后就会好很多啦Android studio 默认的是按Tab 自动生成代码块的，用户可以">
-  
-    <link rel="alternative" href="/atom.xml" title="喜欢雨天的我" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+    
+    <meta property="og:site_name" content="喜欢雨天的我"/>
+
+    
+    <meta property="og:image" content="undefined"/>
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="喜欢雨天的我" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
+
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			
-			<img lazy-src="http://img5.imgtn.bdimg.com/it/u=538416711,2364630704&amp;fm=21&amp;gp=0.jpg" class="js-avatar">
-			
-		</a>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
 
-		<hgroup>
-		  <h1 class="header-author"><a href="/">Hou Shuai</a></h1>
-		</hgroup>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">喜欢雨天的我</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            分类
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-reading " href="/reading" >
+                            <i class="fa fa-book "></i>
+                            
+                            读书
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://img5.imgtn.bdimg.com/it/u=538416711,2364630704&amp;fm=21&amp;gp=0.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">候帅</p>
+                        <p class="desc">Web前端/Android/技术宅/HTML5</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
 
-		
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    分类
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-reading " href="/reading" >
+                    <i class="fa fa-book "></i>
+                    
+                    读书
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
 
-		
-			<div class="switch-btn">
-				<div class="icon">
-					<div class="icon-ctn">
-						<div class="icon-wrap icon-house" data-idx="0">
-							<div class="birdhouse"></div>
-							<div class="birdhouse_holes"></div>
-						</div>
-						<div class="icon-wrap icon-ribbon hide" data-idx="1">
-							<div class="ribbon"></div>
-						</div>
-						
-						<div class="icon-wrap icon-link hide" data-idx="2">
-							<div class="loopback_l"></div>
-							<div class="loopback_r"></div>
-						</div>
-						
-						
-						<div class="icon-wrap icon-me hide" data-idx="3">
-							<div class="user"></div>
-							<div class="shoulder"></div>
-						</div>
-						
-					</div>
-					
-				</div>
-				<div class="tips-box hide">
-					<div class="tips-arrow"></div>
-					<ul class="tips-inner">
-						<li>Menu</li>
-						<li>Tags</li>
-						
-						<li>Links</li>
-						
-						
-						<li>About</li>
-						
-					</ul>
-				</div>
-			</div>
-		
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
 
-		<div class="switch-area">
-			<div class="switch-wrap">
-				<section class="switch-part switch-part1">
-					<nav class="header-menu">
-						<ul>
-						
-							<li><a href="/">主页</a></li>
-				        
-							<li><a href="/archives">所有文章</a></li>
-				        
-						</ul>
-					</nav>
-					<nav class="header-nav">
-						<div class="social">
-							
-								<a class="github" target="_blank" href="https://github.com/houshuai0816" title="github">github</a>
-					        
-								<a class="weibo" target="_blank" href="https://ssl.ptlogin2.qq.com/qqweibo?pt_clientver=5479&pt_src=1&keyindex=9&pgv_ref=im.perinfo.perinfo.icon&clientuin=408619032&clientkey=00015754CDDE00684CAFD3A7E9400858D09368F0904A7ADBDDAD3AC228999566E87648C5ECDB282FBF3240F1A1288AA52B34083BAB697F2823506D68FF60B7492F5FB500A1D2C0E611A8C431A50CADABDDA67CAFC655CFA3348274F782C70F0D211BDD8E2540396F9BB4C9DEADE91626&id=1&targetaccount=&v=5479&tweetid=0&type=0&subtype=0&t1=0&t2=0&t3=0&t4=0&t5=0&t6=0&t7=0" title="weibo">weibo</a>
-					        
-						</div>
-					</nav>
-				</section>
-				
-				
-				<section class="switch-part switch-part2">
-					<div class="widget tagcloud" id="js-tagcloud">
-						
-					</div>
-				</section>
-				
-				
-				
-				<section class="switch-part switch-part3">
-					<div id="js-friends">
-					
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://my.csdn.net/lmj623565791">张鸿洋的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://my.csdn.net/jdsjlzx">一叶飘舟的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://my.csdn.net/sinyu890807">guolin的博客</a>
-			        
-			        </div>
-				</section>
-				
+            
 
-				
-				
-				<section class="switch-part switch-part4">
-				
-					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
-				</section>
-				
-			</div>
-		</div>
-	</header>				
+    </ul>
 </div>
 
+        </div>
     </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-  	<div class="overlay">
-  		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">Hou Shuai</h1>
-  	</div>
-	<div class="intrude-less">
-		<header id="header" class="inner">
-			<div class="profilepic">
-			
-				<img lazy-src="http://img5.imgtn.bdimg.com/it/u=538416711,2364630704&amp;fm=21&amp;gp=0.jpg" class="js-avatar">
-			
-			</div>
-			<hgroup>
-			  <h1 class="header-author">Hou Shuai</h1>
-			</hgroup>
-			
-			<nav class="header-menu">
-				<ul>
-				
-					<li><a href="/">主页</a></li>
-		        
-					<li><a href="/archives">所有文章</a></li>
-		        
-		        <div class="clearfix"></div>
-				</ul>
-			</nav>
-			<nav class="header-nav">
-				<div class="social">
-					
-						<a class="github" target="_blank" href="https://github.com/houshuai0816" title="github">github</a>
-			        
-						<a class="weibo" target="_blank" href="https://ssl.ptlogin2.qq.com/qqweibo?pt_clientver=5479&pt_src=1&keyindex=9&pgv_ref=im.perinfo.perinfo.icon&clientuin=408619032&clientkey=00015754CDDE00684CAFD3A7E9400858D09368F0904A7ADBDDAD3AC228999566E87648C5ECDB282FBF3240F1A1288AA52B34083BAB697F2823506D68FF60B7492F5FB500A1D2C0E611A8C431A50CADABDDA67CAFC655CFA3348274F782C70F0D211BDD8E2540396F9BB4C9DEADE91626&id=1&targetaccount=&v=5479&tweetid=0&type=0&subtype=0&t1=0&t2=0&t3=0&t4=0&t5=0&t6=0&t7=0" title="weibo">weibo</a>
-			        
-				</div>
-			</nav>
-		</header>				
-	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-AndroidStudio快捷键和缩写生成" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/06/AndroidStudio快捷键和缩写生成/" class="article-date">
-  	<time datetime="2016-06-06T01:30:38.322Z" itemprop="datePublished">2016-06-06</time>
-</a>
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
     </div>
-  
-  <div class="article-inner">
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
     
-      <input type="hidden" class="isFancy" />
+        <h1>无题</h1>
     
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
+
+
+            </div>
+            <time class="pink-link-context" datetime="2016-06-06T01:30:38.322Z"><a href="/2016/06/06/AndroidStudio快捷键和缩写生成/">2016-06-06</a></time>
+
+            
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#tags"><span class="section table-of-contents-text">tags:</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <hr>
 <p>title: AndroidStudio快捷键和缩写生成<br>date: 2016-06-06 09:30:38</p>
 <h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2><p>我就针对一些常用的Android studio的live templates进行了一下汇总，<br>大家觉得有用的话就存下来吧，如果不熟悉的话经常去live pemplate进行查询有点麻烦，用熟悉了后就会好很多啦<br>Android studio 默认的是按Tab 自动生成代码块的，用户可以自己在setting–&gt;Live Templates里面进行设置expand style</p>
 <p>////输出打印<br>Groovy(常规部分)—-&gt;<br>serr —&gt;System.err.println(“example”)<br>souf —&gt;printf “example”<br>sout —&gt;println “example”<br>soutm —&gt;System.out.println(“MainActivity.onCreate”);//当前类的当前方法名<br>soutp —&gt;System.out.println(“savedInstanceState = [“ + savedInstanceState + “]”);//这个好，可以打印出当前方法的所有参数列表及其值<br>soutv —&gt;System.out.println(“params”,params);//即 你可以输出打印一个变量值<br>//（常规的代码块儿）<br>Iteractions—&gt;//快速生成代码块儿<br>fori —&gt;for (int i = 0; i &lt; ; i++) {}<br>itar —&gt;for (int i = 0; i &lt; Array.length; i++) { int i1 = Array[i];}//遍历数组<br>itco —&gt;for (Iterator iterator = collection.iterator(); iterator.hasNext(); ) {<br>Object next = iterator.next();<br>}//这个是遍历一个容器变量的，直接让容器返回一个iterator进行遍历<br>iten —&gt;while (枚举类.hasMoreElements()) { Object nextElement = 枚举类.nextElement(); }//enumeration 是一个枚举类接口来着。遍历枚举内容<br>iter —&gt;for (int i : FOCUSED_STATE_SET) {…}//遍历选中状态下的set<br>itit —&gt;while (iterator.hasNext()) { Object next = iterator.next(); }//获取到了迭代器对象后，对迭代器进行遍历操作<br>itli —&gt;for (int i = 0; i &lt; list.size(); i++) { Object o = list.get(i); }//遍历list对象里面的内容<br>ritar —&gt;for (int i = Array.length - 1; i &gt;= 0; i–) { int i1 = FOCUSED_STATE_SET[i]; }//倒叙遍历数组<br>//其他的（综合）<br>geti —&gt;public static MainActivity getInstance() { return ; }//获取到当前的实例 的代码模板<br>ifn —&gt;if (某变量 == null) {….}//生成if null代码块儿<br>inn —&gt;if (某变量 != null) {….}//生成if not null代码块儿<br>inst —&gt;if ($EXPR$ instanceof $TYPE$) { $TYPE$ $VAR1$ = ($TYPE$)$EXPR$; $END$ }//判断某变量是不是某个类的实例对象<br>lazy —&gt;if (savedInstanceState == null) { savedInstanceState = new Bundle(); }//执行延迟初始化，就是对象直到用的时候才进行初始化操作<br>mn —&gt;var1 = Math.min(var2,var3);//得到比较两个变量值小的代码块<br>mx —&gt;var1 = Math.max(var2,var3);//得到比较两个变量值大的代码块<br>psvm —&gt;public static void main(String[] args){ 。。。。 }//生成一个main()函数的代码块<br>toar —&gt;something.toArray(new collection[collection.size()])//这个是生成一个代码块用于把collection的对象存储到一个数组里面去.实用！<br>//普通的代码（修饰符部分的）<br>psf —&gt;public static final<br>psfi —&gt;public static final int<br>psfs —&gt;public static final String<br>St —&gt;String<br>thr —&gt;throw new<br>IDEA 快捷键</p>
@@ -241,113 +268,273 @@ tags:我就针对一些常用的Android studio的live templates进行了一下�
 <p>与Ubuntu系统快捷键冲突的地方</p>
 <p>Here’s a list of tweaks you need to make with default system key bindings so that they won’t interfere with IntelliJ IDEA actions (listed in brackets).<br>Disable the Shade window action, assigned to Ctrl + Alt + S (Settings dialog)<br>Change or disable the Lock Screen action, assigned to Ctrl + Alt + L (Reformat code)<br>Change or disable the Launch terminal action, assigned to Ctrl + Alt + T (Surround with)<br>Change or disable the Switch to workspace action, assigned to Сtrl + Alt + Arrows (Navigation)<br>Disable the Move window action, assigned to Alt + F7 (Find usages)<br>Change or disable the Resize window action, assigned to Alt + F8 (Evaluate expression</p>
 
-      
+            </div>
+        </div>
     </div>
-    
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2016/06/06/https和http之间的区别/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2016/06/06/MarkDown初步入门/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
-      <strong class="article-nav-caption">></strong>
-    </a>
-  
-</nav>
-
-  
 </article>
 
 
-<div class="share_jia">
-	<!-- JiaThis Button BEGIN -->
-	<div class="jiathis_style">
-		<span class="jiathis_txt">Share to: &nbsp; </span>
-		<a class="jiathis_button_facebook"></a> 
-    <a class="jiathis_button_twitter"></a>
-    <a class="jiathis_button_plus"></a> 
-    <a class="jiathis_button_tsina"></a>
-		<a class="jiathis_button_cqq"></a>
-		<a class="jiathis_button_douban"></a>
-		<a class="jiathis_button_weixin"></a>
-		<a class="jiathis_button_tumblr"></a>
-    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
-	</div>
-	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
-	<!-- JiaThis Button END -->
-</div>
-
-
-
-
-
-
-<div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="AndroidStudio快捷键和缩写生成" data-title="" data-url="http://yoursite.com/child/2016/06/06/AndroidStudio快捷键和缩写生成/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
 
 
 
 
 </div>
-      <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2016 Hou Shuai
-    	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
-    </div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large pink">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
   </div>
-</footer>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m3 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/1956184117" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/raytaylorlin" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+            </div>
+            
+
+            
+            <div class="col m9 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="http://raytaylorlin.com/" target="_blank">raytaylorism主题作者的技术博客</a>
+                
+                    <a class="social-link" href="https://github.com/raytaylorlin" target="_blank">Github地址（测试友情链接）</a>
+                
+            </div>
+            
+        </div>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
+    <div class="footer-copyright pink-link-context">
+        <div class="container">
+            © 2016 example.com, All rights reserved.
+            <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.min.js"></script>
 
 <script>
-	var yiliaConfig = {
-		fancybox: true,
-		mathjax: true,
-		animate: true,
-		isHome: false,
-		isPost: true,
-		isArchive: false,
-		isTag: false,
-		isCategory: false,
-		open_in_new: false
-	}
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('pink lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword pink lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-<script src="/js/main.js"></script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
 
 
 
@@ -356,25 +543,14 @@ tags:我就针对一些常用的Android studio的live templates进行了一下�
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
 </script>
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
 
-  </div>
+
 </body>
 </html>
