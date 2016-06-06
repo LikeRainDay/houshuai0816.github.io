@@ -29,18 +29,4 @@
     
   </url>
   
-  <url>
-    <loc>http://yoursite.com/child/about/index.html</loc>
-    
-    <lastmod>2016-06-06T03:33:22.813Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/child/reading/index.html</loc>
-    
-    <lastmod>2016-06-06T03:00:21.976Z</lastmod>
-    
-  </url>
-  
 </urlset>
