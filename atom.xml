@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2016-06-06T05:14:54.100Z</updated>
+  <updated>2016-06-06T06:53:44.467Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -20,10 +20,9 @@
     <link href="http://yoursite.com/child/2016/06/06/%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6/"/>
     <id>http://yoursite.com/child/2016/06/06/开源框架/</id>
     <published>2016-06-06T05:11:05.000Z</published>
-    <updated>2016-06-06T05:14:54.100Z</updated>
+    <updated>2016-06-06T06:53:44.467Z</updated>
     
-    <content type="html">&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;#站在巨人的肩膀&lt;/p&gt;
+    <content type="html">&lt;p&gt;#站在巨人的肩膀&lt;/p&gt;
 &lt;h2 id=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot;&gt;&lt;a href=&quot;#如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot; class=&quot;headerlink&quot; title=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot;&gt;&lt;/a&gt;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&lt;/h2&gt;&lt;p&gt;##开源框架&lt;br&gt;自己在工作和学习中，因为种种需求而找寻的一些开源的框架，不是说拥抱开源就不自己去理解，那么你站在巨人的肩膀上，看到的只是一片一片的云彩，看不到美丽的田野，和高飞的鸟儿。&lt;/p&gt;
 &lt;h1 id=&quot;butterknife&quot;&gt;&lt;a href=&quot;#butterknife&quot; class=&quot;headerlink&quot; title=&quot;* butterknife&quot;&gt;&lt;/a&gt;* &lt;a href=&quot;https://github.com/JakeWharton/butterknife&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;butterknife&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;  中文译：黄油刀。做Android开发的应该对作者并不陌生吧，那就是大名鼎鼎的JakeWharton，&lt;a href=&quot;https://github.com/JakeWharton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JakeWharton在GitHub上的主页&lt;/a&gt; &lt;img src=&quot;https://github.com/JakeWharton/butterknife/raw/master/website/static/logo.png&quot; alt=&quot;butterknife&quot;&gt;&lt;/p&gt;
 &lt;p&gt;ButterKnife 优势：&lt;br&gt;1.强大的View绑定和Click事件处理功能，简化代码，提升开发效率&lt;br&gt;2.方便的处理Adapter里的ViewHolder绑定问题&lt;br&gt;3.运行时不会影响APP效率，使用配置方便&lt;br&gt;4.代码清晰，可读性强&lt;/p&gt;
@@ -40,11 +39,12 @@
     
     <summary type="html">
     
-      &lt;p&gt;[TOC]&lt;/p&gt;
-&lt;p&gt;#站在巨人的肩膀&lt;/p&gt;
-&lt;h2 id=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上
+      &lt;p&gt;#站在巨人的肩膀&lt;/p&gt;
+&lt;h2 id=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot;&gt;&lt;a h
     
     </summary>
+    
+      <category term="第三方 - 建站" scheme="http://yoursite.com/child/categories/%E7%AC%AC%E4%B8%89%E6%96%B9-%E5%BB%BA%E7%AB%99/"/>
     
     
       <category term="-Android -Web -Html5" scheme="http://yoursite.com/child/tags/Android-Web-Html5/"/>
