@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2016-06-06T03:35:55.053Z</updated>
+  <updated>2016-06-06T04:45:33.423Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -20,11 +20,12 @@
     <link href="http://yoursite.com/child/2016/06/06/https%E5%92%8Chttp%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://yoursite.com/child/2016/06/06/https和http之间的区别/</id>
     <published>2016-06-06T01:31:43.525Z</published>
-    <updated>2016-06-06T03:35:55.053Z</updated>
+    <updated>2016-06-06T04:45:33.423Z</updated>
     
     <content type="html">&lt;hr&gt;
-&lt;p&gt;title: https和http之间的区别&lt;br&gt;date: 2016-06-06 09:31:43&lt;/p&gt;
-&lt;h2 id=&quot;tags-https和http之间的区别&quot;&gt;&lt;a href=&quot;#tags-https和http之间的区别&quot; class=&quot;headerlink&quot; title=&quot;tags: https和http之间的区别&quot;&gt;&lt;/a&gt;tags: https和http之间的区别&lt;/h2&gt;&lt;p&gt; [TOC]&lt;/p&gt;
+&lt;p&gt;title: https和http之间的区别&lt;br&gt;date: 2016-06-06 09:31:43&lt;br&gt;tags:&lt;br&gt;     -Android&lt;br&gt;     -Web&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt; [TOC]&lt;/p&gt;
 &lt;h1 id=&quot;Https于Http之间的差异&quot;&gt;&lt;a href=&quot;#Https于Http之间的差异&quot; class=&quot;headerlink&quot; title=&quot;Https于Http之间的差异&quot;&gt;&lt;/a&gt;&lt;strong&gt;Https于Http之间的差异&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;最近几天看了有关网络通信的文章，结合自己android项目下，有关网络安全，现在想要介绍一下他们之间的差别，并不是http多了一个小s那么简单，就如同多了一个保障加了一份security。那么大家就请跟着我的步伐一切来认识一下哥哥和弟弟。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;##Http作为哥哥的自我简介&lt;/p&gt;
@@ -56,8 +57,10 @@
     <summary type="html">
     
       &lt;hr&gt;
-&lt;p&gt;title: https和http之间的区别&lt;br&gt;date: 2016-06-06 09:31:43&lt;/p&gt;
-&lt;h2 id=&quot;tags-https和http之间的区别&quot;&gt;&lt;a href=&quot;#tags-https和http之间的区别&quot; class=&quot;headerl
+&lt;p&gt;title: https和http之间的区别&lt;br&gt;date: 2016-06-06 09:31:43&lt;br&gt;tags:&lt;br&gt;     -Android&lt;br&gt;     -Web&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt; [TOC]&lt;/p&gt;
+&lt;h1 id=&quot;Https于Http
     
     </summary>
     
@@ -69,10 +72,12 @@
     <link href="http://yoursite.com/child/2016/06/06/AndroidStudio%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%92%8C%E7%BC%A9%E5%86%99%E7%94%9F%E6%88%90/"/>
     <id>http://yoursite.com/child/2016/06/06/AndroidStudio快捷键和缩写生成/</id>
     <published>2016-06-06T01:30:38.322Z</published>
-    <updated>2016-06-06T03:59:37.865Z</updated>
+    <updated>2016-06-06T04:42:59.061Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;AndroidStudio快捷键和缩写生成&quot;&gt;&lt;a href=&quot;#AndroidStudio快捷键和缩写生成&quot; class=&quot;headerlink&quot; title=&quot;AndroidStudio快捷键和缩写生成&quot;&gt;&lt;/a&gt;AndroidStudio快捷键和缩写生成&lt;/h2&gt;&lt;p&gt;title: AndroidStudio快捷键和缩写生成&lt;br&gt;date: 2016-06-06 09:30:38&lt;/p&gt;
-&lt;h2 id=&quot;tags-AndroidStudio快捷键和缩写生成&quot;&gt;&lt;a href=&quot;#tags-AndroidStudio快捷键和缩写生成&quot; class=&quot;headerlink&quot; title=&quot;tags: AndroidStudio快捷键和缩写生成&quot;&gt;&lt;/a&gt;tags: AndroidStudio快捷键和缩写生成&lt;/h2&gt;&lt;p&gt;我就针对一些常用的Android studio的live templates进行了一下汇总，&lt;br&gt;大家觉得有用的话就存下来吧，如果不熟悉的话经常去live pemplate进行查询有点麻烦，用熟悉了后就会好很多啦&lt;br&gt;Android studio 默认的是按Tab 自动生成代码块的，用户可以自己在setting–&amp;gt;Live Templates里面进行设置expand style&lt;/p&gt;
+    <content type="html">&lt;hr&gt;
+&lt;p&gt;title: AndroidStudio快捷键和缩写生成&lt;br&gt;date: 2016-06-06 09:30:38&lt;br&gt;tags:&lt;br&gt;     -Android&lt;br&gt;     -MarkDown&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我就针对一些常用的Android studio的live templates进行了一下汇总，&lt;br&gt;大家觉得有用的话就存下来吧，如果不熟悉的话经常去live pemplate进行查询有点麻烦，用熟悉了后就会好很多啦&lt;br&gt;Android studio 默认的是按Tab 自动生成代码块的，用户可以自己在setting–&amp;gt;Live Templates里面进行设置expand style&lt;/p&gt;
 &lt;p&gt;////输出打印&lt;br&gt;Groovy(常规部分)—-&amp;gt;&lt;br&gt;serr —&amp;gt;System.err.println(“example”)&lt;br&gt;souf —&amp;gt;printf “example”&lt;br&gt;sout —&amp;gt;println “example”&lt;br&gt;soutm —&amp;gt;System.out.println(“MainActivity.onCreate”);//当前类的当前方法名&lt;br&gt;soutp —&amp;gt;System.out.println(“savedInstanceState = [“ + savedInstanceState + “]”);//这个好，可以打印出当前方法的所有参数列表及其值&lt;br&gt;soutv —&amp;gt;System.out.println(“params”,params);//即 你可以输出打印一个变量值&lt;br&gt;//（常规的代码块儿）&lt;br&gt;Iteractions—&amp;gt;//快速生成代码块儿&lt;br&gt;fori —&amp;gt;for (int i = 0; i &amp;lt; ; i++) {}&lt;br&gt;itar —&amp;gt;for (int i = 0; i &amp;lt; Array.length; i++) { int i1 = Array[i];}//遍历数组&lt;br&gt;itco —&amp;gt;for (Iterator iterator = collection.iterator(); iterator.hasNext(); ) {&lt;br&gt;Object next = iterator.next();&lt;br&gt;}//这个是遍历一个容器变量的，直接让容器返回一个iterator进行遍历&lt;br&gt;iten —&amp;gt;while (枚举类.hasMoreElements()) { Object nextElement = 枚举类.nextElement(); }//enumeration 是一个枚举类接口来着。遍历枚举内容&lt;br&gt;iter —&amp;gt;for (int i : FOCUSED_STATE_SET) {…}//遍历选中状态下的set&lt;br&gt;itit —&amp;gt;while (iterator.hasNext()) { Object next = iterator.next(); }//获取到了迭代器对象后，对迭代器进行遍历操作&lt;br&gt;itli —&amp;gt;for (int i = 0; i &amp;lt; list.size(); i++) { Object o = list.get(i); }//遍历list对象里面的内容&lt;br&gt;ritar —&amp;gt;for (int i = Array.length - 1; i &amp;gt;= 0; i–) { int i1 = FOCUSED_STATE_SET[i]; }//倒叙遍历数组&lt;br&gt;//其他的（综合）&lt;br&gt;geti —&amp;gt;public static MainActivity getInstance() { return ; }//获取到当前的实例 的代码模板&lt;br&gt;ifn —&amp;gt;if (某变量 == null) {….}//生成if null代码块儿&lt;br&gt;inn —&amp;gt;if (某变量 != null) {….}//生成if not null代码块儿&lt;br&gt;inst —&amp;gt;if ($EXPR$ instanceof $TYPE$) { $TYPE$ $VAR1$ = ($TYPE$)$EXPR$; $END$ }//判断某变量是不是某个类的实例对象&lt;br&gt;lazy —&amp;gt;if (savedInstanceState == null) { savedInstanceState = new Bundle(); }//执行延迟初始化，就是对象直到用的时候才进行初始化操作&lt;br&gt;mn —&amp;gt;var1 = Math.min(var2,var3);//得到比较两个变量值小的代码块&lt;br&gt;mx —&amp;gt;var1 = Math.max(var2,var3);//得到比较两个变量值大的代码块&lt;br&gt;psvm —&amp;gt;public static void main(String[] args){ 。。。。 }//生成一个main()函数的代码块&lt;br&gt;toar —&amp;gt;something.toArray(new collection[collection.size()])//这个是生成一个代码块用于把collection的对象存储到一个数组里面去.实用！&lt;br&gt;//普通的代码（修饰符部分的）&lt;br&gt;psf —&amp;gt;public static final&lt;br&gt;psfi —&amp;gt;public static final int&lt;br&gt;psfs —&amp;gt;public static final String&lt;br&gt;St —&amp;gt;String&lt;br&gt;thr —&amp;gt;throw new&lt;br&gt;IDEA 快捷键&lt;/p&gt;
 &lt;p&gt;这是从IDEA官网下载的IDEA keymap Windows/Linux，中文我会慢慢补充上去。&lt;br&gt;因为AS是基于IDEA社区版开发的，所以快捷键都AS同样适用。&lt;br&gt;IntelliJ IDEA Default Keymap&lt;br&gt;To find any action inside the IDE use&lt;br&gt;Find Action     Ctrl+Shift+A/ A    查找快捷键，action快捷入口的快捷键&lt;/p&gt;
 &lt;p&gt;Editing 编辑&lt;br&gt;Ctrl + Space    Basic code completion (the name of any class,method or variable)    基本的代码补全&lt;br&gt;Ctrl + Shift + Space    Smart code completion (filters the list of methodsand variables by expected type)    智能代码补全&lt;br&gt;Ctrl + Shift + Enter    Complete statement    补全当前语句&lt;br&gt;Ctrl + P    Parameter info (within method call arguments)    显示函数的参数信息&lt;br&gt;Ctrl + Q    Quick documentation lookup    快速文档查找&lt;br&gt;Shift + F1    External Doc    外部文档&lt;br&gt;Ctrl + mouse over code     Brief Info    简要信息显示&lt;br&gt;Ctrl + F1    Show descriptions of error or warning at caret    显示错误或警告的说明&lt;br&gt;Alt + Insert    Generate code… (Getters, Setters, Constructors,hashCode/equals, toString)    生成（Getters, Setters, Constructors,hashCode/equals, toString）代码&lt;br&gt;Ctrl + O    Override methods    重写方法&lt;br&gt;Ctrl + I    Implement methods    实现方法&lt;br&gt;Ctrl + Alt + T    Surround with… (if..else, try..catch, for,synchronized, etc.)    用if..else, try..catch, for,synchronized等环绕代码块&lt;br&gt;Ctrl + /     Comment/uncomment with line comment    注释/取消注释代码行&lt;br&gt;Ctrl + Shift + /    Comment/uncomment with block comment    注释/取消注释代码块&lt;br&gt;Ctrl + W     Select successively increasing code blocks    依次选择更多的代码块&lt;br&gt;Ctrl + Shift + W         Decrease current selection to previous state    依次减少选择的代码块&lt;br&gt;Alt + Q     Context info    &lt;/p&gt;
@@ -113,7 +118,10 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;AndroidStudio快捷键和缩写生成&quot;&gt;&lt;a href=&quot;#AndroidStudio快捷键和缩写生成&quot; class=&quot;headerlink&quot; title=&quot;AndroidStudio快捷键和缩写生成&quot;&gt;&lt;/a&gt;AndroidStudio快捷键和缩写生成&lt;/
+      &lt;hr&gt;
+&lt;p&gt;title: AndroidStudio快捷键和缩写生成&lt;br&gt;date: 2016-06-06 09:30:38&lt;br&gt;tags:&lt;br&gt;     -Android&lt;br&gt;     -MarkDown&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;我就针对一些常用的Android s
     
     </summary>
     
@@ -125,11 +133,11 @@
     <link href="http://yoursite.com/child/2016/06/06/MarkDown%E5%88%9D%E6%AD%A5%E5%85%A5%E9%97%A8/"/>
     <id>http://yoursite.com/child/2016/06/06/MarkDown初步入门/</id>
     <published>2016-06-06T01:06:19.289Z</published>
-    <updated>2016-06-06T03:36:05.515Z</updated>
+    <updated>2016-06-06T04:43:51.831Z</updated>
     
-    <content type="html">&lt;hr&gt;
-&lt;p&gt;title: MarkDown初步入门&lt;br&gt;date: 2016-06-06 09:06:19&lt;/p&gt;
-&lt;h2 id=&quot;tags-MarkDown初步入门&quot;&gt;&lt;a href=&quot;#tags-MarkDown初步入门&quot; class=&quot;headerlink&quot; title=&quot;tags:MarkDown初步入门&quot;&gt;&lt;/a&gt;tags:MarkDown初步入门&lt;/h2&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;MarkDown初步入门&quot;&gt;&lt;a href=&quot;#MarkDown初步入门&quot; class=&quot;headerlink&quot; title=&quot; MarkDown初步入门&quot;&gt;&lt;/a&gt;&lt;head&gt; MarkDown初步入门&lt;/head&gt;&lt;/h2&gt;&lt;p&gt;title: MarkDown初步入门&lt;br&gt;date: 2016-06-06 09:06:19&lt;br&gt;tags:&lt;br&gt;     -Android&lt;br&gt;     -MarkDown&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;p&gt;##前情提要&lt;br&gt;HI 大家好！今天为大家推荐Markdown的编辑写法，首先要成事，必先利其器。接下来为大家推荐几个方便的Mardown的编辑软件（点击文字进入下载界面）&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;##工具介绍&lt;/p&gt;
@@ -177,9 +185,7 @@
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;title: MarkDown初步入门&lt;br&gt;date: 2016-06-06 09:06:19&lt;/p&gt;
-&lt;h2 id=&quot;tags-MarkDown初步入门&quot;&gt;&lt;a href=&quot;#tags-MarkDown初步入门&quot; class=&quot;headerlink&quot; titl
+      &lt;h2 id=&quot;MarkDown初步入门&quot;&gt;&lt;a href=&quot;#MarkDown初步入门&quot; class=&quot;headerlink&quot; title=&quot; MarkDown初步入门&quot;&gt;&lt;/a&gt;&lt;head&gt; MarkDown初步入门&lt;/head&gt;&lt;/h2&gt;&lt;p&gt;title: MarkDown
     
     </summary>
     
@@ -191,11 +197,12 @@
     <link href="http://yoursite.com/child/2016/06/06/%E6%96%B0%E6%96%87%E7%AB%A0/"/>
     <id>http://yoursite.com/child/2016/06/06/新文章/</id>
     <published>2016-06-06T00:23:07.248Z</published>
-    <updated>2016-06-06T03:36:12.009Z</updated>
+    <updated>2016-06-06T04:44:41.087Z</updated>
     
     <content type="html">&lt;hr&gt;
-&lt;p&gt;title: 新文章&lt;br&gt;date: 2016-06-06 08:23:07&lt;/p&gt;
-&lt;h2 id=&quot;tags-新文章&quot;&gt;&lt;a href=&quot;#tags-新文章&quot; class=&quot;headerlink&quot; title=&quot;tags:新文章&quot;&gt;&lt;/a&gt;tags:新文章&lt;/h2&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;title: 新文章&lt;br&gt;date: 2016-06-06 08:23:07&lt;br&gt;tags:&lt;br&gt;    -New&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
 &lt;p&gt;#站在巨人的肩膀&lt;/p&gt;
 &lt;h2 id=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot;&gt;&lt;a href=&quot;#如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot; class=&quot;headerlink&quot; title=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&quot;&gt;&lt;/a&gt;如今的互联网已经达到了没有一个人可以精通所有的程度，因此在我们进行当前专业的学习和工作时候，不要一味的一个人在奋斗，一个人默默的敲代码，不去拥抱开源，和闭门造车有何区别，我们要做一个眺望着，站在巨人的肩膀上才能走得更远。&lt;/h2&gt;&lt;p&gt;##开源框架&lt;br&gt;自己在工作和学习中，因为种种需求而找寻的一些开源的框架，不是说拥抱开源就不自己去理解，那么你站在巨人的肩膀上，看到的只是一片一片的云彩，看不到美丽的田野，和高飞的鸟儿。&lt;/p&gt;
 &lt;h1 id=&quot;butterknife&quot;&gt;&lt;a href=&quot;#butterknife&quot; class=&quot;headerlink&quot; title=&quot;* butterknife&quot;&gt;&lt;/a&gt;* &lt;a href=&quot;https://github.com/JakeWharton/butterknife&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;butterknife&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;  中文译：黄油刀。做Android开发的应该对作者并不陌生吧，那就是大名鼎鼎的JakeWharton，&lt;a href=&quot;https://github.com/JakeWharton&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;JakeWharton在GitHub上的主页&lt;/a&gt; &lt;img src=&quot;https://github.com/JakeWharton/butterknife/raw/master/website/static/logo.png&quot; alt=&quot;butterknife&quot;&gt;&lt;/p&gt;
@@ -214,8 +221,11 @@
     <summary type="html">
     
       &lt;hr&gt;
-&lt;p&gt;title: 新文章&lt;br&gt;date: 2016-06-06 08:23:07&lt;/p&gt;
-&lt;h2 id=&quot;tags-新文章&quot;&gt;&lt;a href=&quot;#tags-新文章&quot; class=&quot;headerlink&quot; title=&quot;tags:新文章&quot;&gt;&lt;/a&gt;tags:新文章&lt;/
+&lt;p&gt;title: 新文章&lt;br&gt;date: 2016-06-06 08:23:07&lt;br&gt;tags:&lt;br&gt;    -New&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;#站在巨人的肩膀&lt;/p&gt;
+&lt;h2 id=&quot;如今的互联网已经达到了没有一个人可以精通所有的程度
     
     </summary>
     
