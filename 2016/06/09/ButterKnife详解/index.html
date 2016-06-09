@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Hou Shuai" />
+
+
+
+<meta name="description">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ButterKnife详解">
+<meta property="og:url" content="http://yoursite.com/child/2016/06/09/ButterKnife详解/index.html">
+<meta property="og:site_name" content="喜欢雨天的我">
+<meta property="og:description">
+<meta property="og:image" content="https://github.com/JakeWharton/butterknife/raw/master/website/static/logo.png">
+<meta property="og:image" content="http://i4.buimg.com/b45cb1d895c5cb90s.png">
+<meta property="og:image" content="http://i2.buimg.com/9ec4ab2fbfcdda91s.png">
+<meta property="og:image" content="http://i2.buimg.com/4c8801a9309550b0s.png">
+<meta property="og:image" content="http://img0.tuicool.com/JfQ73eI.gif">
+<meta property="og:updated_time" content="2016-06-09T09:51:40.487Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ButterKnife详解">
+<meta name="twitter:description">
+<meta name="twitter:image" content="https://github.com/JakeWharton/butterknife/raw/master/website/static/logo.png">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternative" href="/atom.xml" title="喜欢雨天的我" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>ButterKnife详解 | 喜欢雨天的我</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        open_in_new: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: undefined
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Hou Shuai</a></h1>
+        </hgroup>
+
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="http://mail.126.com/js6/main.jsp?sid=kAXZeYsshIDZrNmpmqsspPuZgFbUriKN&df=unknow" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/houshuai0816" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="http://my.csdn.net/my/mycsdn" title="CSDN"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/https-http/">-https -http</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/快捷键-代码缩写/">-快捷键 -代码缩写</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/第三方框架/">-第三方框架</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/魔兽世界6月8号电影/">-魔兽世界6月8号电影</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ButterKnife/">ButterKnife</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/">Markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo使用的命令个人博客主题样式的配置/">hexo使用的命令
+个人博客主题样式的配置</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于Android的移动开发和VR技术</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Hou Shuai</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Hou Shuai</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="http://mail.126.com/js6/main.jsp?sid=kAXZeYsshIDZrNmpmqsspPuZgFbUriKN&df=unknow" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/houshuai0816" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="http://my.csdn.net/my/mycsdn" title="CSDN"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-ButterKnife详解" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/09/ButterKnife详解/" class="article-date">
+      <time datetime="2016-06-09T09:50:22.000Z" itemprop="datePublished">2016-06-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ButterKnife详解
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/第三方框架/">第三方框架</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ButterKnife/">ButterKnife</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <ul>
+<li><a id="more"></a>
+<h1 id="开章简介"><a href="#开章简介" class="headerlink" title="开章简介"></a>开章简介</h1><h2 id="Hi-大家好-今天将为大家带来有关Android第三方框架ButterKnife的详细讲解。"><a href="#Hi-大家好-今天将为大家带来有关Android第三方框架ButterKnife的详细讲解。" class="headerlink" title="Hi,大家好 今天将为大家带来有关Android第三方框架ButterKnife的详细讲解。"></a>Hi,大家好 今天将为大家带来有关Android第三方框架<a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="external">ButterKnife</a>的详细讲解。</h2><h2 id="ButterKnife介绍"><a href="#ButterKnife介绍" class="headerlink" title="ButterKnife介绍"></a>ButterKnife介绍</h2>ButterKnife是出自于<a href="https://github.com/JakeWharton" target="_blank" rel="external">JakeWharton</a>的手，相信对安卓开发的人员来说，这个名字真的可以说是我们耳熟能详的了，那么对于刚刚接触Android的朋友，尤其刚刚接触ButterKnife的朋友可能不算太了解。(那么今后出去混，一定可要说认识喽)<br><img src="https://github.com/JakeWharton/butterknife/raw/master/website/static/logo.png" alt=""><blockquote>
+<p>Field and method binding for Android views which uses annotation processing to generate boilerplate code for you.</p>
+</blockquote>
+</li>
+</ul>
+<blockquote>
+<p>Eliminate findViewById calls by using @BindView on fields.<br>Group multiple views in a list or array. Operate on all of them at once with actions, setters, or properties.<br>Eliminate anonymous inner-classes for listeners by annotating methods with @OnClick and others.<br>Eliminate resource lookups by using resource annotations on fields.<br>class ExampleActivity extends Activity {<br>  @BindView(R.id.user) EditText username;<br>  @BindView(R.id.pass) EditText password;</p>
+<p>@BindString(R.string.login_error) String loginErrorMessage;</p>
+<p> @OnClick(R.id.submit) void submit() {<br>    // TODO call server…<br>  }</p>
+<p>@Override public void onCreate(Bundle savedInstanceState) {<br>    super.onCreate(savedInstanceState);<br>    setContentView(R.layout.simple_activity);<br>    ButterKnife.bind(this);<br>    // TODO Use fields…<br>  }<br>}<br>For documentation and additional information see the website.</p>
+<p>Remember: A butter knife is like a dagger only infinitely less sharp.</p>
+<p>Download</p>
+<p>Add this to you project-level build.gradle:</p>
+<p>buildscript {<br>  repositories {<br>    mavenCentral()<br>   }<br>  dependencies {<br>    classpath ‘com.neenbedankt.gradle.plugins:android-apt:1.8’<br>  }<br>}<br>Add this to your module-level build.gradle:</p>
+<p>apply plugin: ‘android-apt’</p>
+<p>android {<br>  …<br>}</p>
+<p>dependencies {<br>  compile ‘com.jakewharton:butterknife:8.0.1’<br>  apt ‘com.jakewharton:butterknife-compiler:8.0.1’<br>}<br>Make sure the line apply plugin … is placed somewhere at the top of the file.</p>
+<p>Snapshots of the development version are available in Sonatype’s snapshots repository.</p>
+<p>License</p>
+<p>Copyright 2013 Jake Wharton</p>
+<p>Licensed under the Apache License, Version 2.0 (the “License”);<br>you may not use this file except in compliance with the License.<br>You may obtain a copy of the License at</p>
+<p>  <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="external">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+<p>Unless required by applicable law or agreed to in writing, software<br>distributed under the License is distributed on an “AS IS” BASIS,<br>WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br>See the License for the specific language governing permissions and</p>
+<h2 id="limitations-under-the-License"><a href="#limitations-under-the-License" class="headerlink" title="limitations under the License."></a>limitations under the License.</h2><h2 id="以上是引用来自github这里英文简单的介绍了如何在AndroidStudio中引用依赖包，并且简单的介绍了一下使用的方法，对于英文好的朋友这些都是很简单的，但是对于那些英语不好的朋友，就显得有一些不友善了，毕竟我们是大中华。但这丝毫不能阻止我们对工具的渴求，那么接下来我将讲解黄油刀ButterKnife的详细介绍。"><a href="#以上是引用来自github这里英文简单的介绍了如何在AndroidStudio中引用依赖包，并且简单的介绍了一下使用的方法，对于英文好的朋友这些都是很简单的，但是对于那些英语不好的朋友，就显得有一些不友善了，毕竟我们是大中华。但这丝毫不能阻止我们对工具的渴求，那么接下来我将讲解黄油刀ButterKnife的详细介绍。" class="headerlink" title="以上是引用来自github这里英文简单的介绍了如何在AndroidStudio中引用依赖包，并且简单的介绍了一下使用的方法，对于英文好的朋友这些都是很简单的，但是对于那些英语不好的朋友，就显得有一些不友善了，毕竟我们是大中华。但这丝毫不能阻止我们对工具的渴求，那么接下来我将讲解黄油刀ButterKnife的详细介绍。"></a>以上是引用来自<a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="external">github</a>这里英文简单的介绍了如何在AndroidStudio中引用依赖包，并且简单的介绍了一下使用的方法，对于英文好的朋友这些都是很简单的，但是对于那些英语不好的朋友，就显得有一些不友善了，毕竟我们是大中华。但这丝毫不能阻止我们对工具的渴求，那么接下来我将讲解黄油刀<a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="external">ButterKnife</a>的详细介绍。</h2><h2 id="ButterKnife所用到的Java技术"><a href="#ButterKnife所用到的Java技术" class="headerlink" title="ButterKnife所用到的Java技术"></a>ButterKnife所用到的Java技术</h2><h2 id="在介绍前，需要大家了解一下黄油刀所用到的java知识基础。这里用到的技术为java的元注解，当然我还没有发有关于元注解的博文，因此这里的介绍就引用了竹子-博客-要深入了解第三方技术，请先进入了解，元注解机制。"><a href="#在介绍前，需要大家了解一下黄油刀所用到的java知识基础。这里用到的技术为java的元注解，当然我还没有发有关于元注解的博文，因此这里的介绍就引用了竹子-博客-要深入了解第三方技术，请先进入了解，元注解机制。" class="headerlink" title="在介绍前，需要大家了解一下黄油刀所用到的java知识基础。这里用到的技术为java的元注解，当然我还没有发有关于元注解的博文，因此这里的介绍就引用了竹子-博客,要深入了解第三方技术，请先进入了解，元注解机制。"></a>在介绍前，需要大家了解一下黄油刀所用到的java知识基础。这里用到的技术为java的元注解，当然我还没有发有关于元注解的博文，因此这里的介绍就引用了<a href="http://www.cnblogs.com/peida/archive/2013/04/24/3036689.html" target="_blank" rel="external">竹子-博客</a>,要深入了解第三方技术，请先进入了解，元注解机制。</h2><p>Java标准Annotation<br>@Deprecated 相当于Javadoc的@deprecated，被@Deprecated标注的对象class, method等被注明为不推荐使用。主要用于javac等编译工具。<br>@Override 注明对象method重载了父类的方法。javac等编译工具编译时会根据此Annotation判断重载方法是否正确。<br>@SuppressWarnings 告诉javac等编译器忽略所指定的特定的警告信息。<br>@Target 被定义的annotation可以附加在那些对象上。</p>
+<h2 id="Retention-annotation的作用期间"><a href="#Retention-annotation的作用期间" class="headerlink" title="@Retention annotation的作用期间"></a>@Retention annotation的作用期间</h2><p> @Retention 可以设置为RetentionPolicy类型的值。那么其值为<br> | RetentionPolicy的值       | 说明  |<br>| ————- | —–:|<br>| RetentionPolicy.CLASS     | annotation信息将被编译器编译时保存在class文件中，但执行时不会在VM装载。也就是说不能在执行时动态取得annotation信息。未设置@Retention时这将是默认设置值。|<br>| RetentionPolicy.RUNTIME      | annotation信息将被编译器编译时保存在class文件中，执行时也会被VM装载。     |<br>| RetentionPolicy.SOURCE | annotation信息将被编译器编译时舍弃掉。       |<br>这是我摘取的源码注解</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://i4.buimg.com/b45cb1d895c5cb90s.png" alt=""></h2><p> @Target表明Annotation可以附加在哪种JAVA元素之上，可以设置为java.lang.annotation.ElementType数组类型的值。<br> | ElementType值 |     说明|<br>| ————- | —–:|<br>| ElementType.ANNOTATION_TYPE| 应用于其他注解的元注解|<br>|ElementType.CONSTRUCTOR|    构造函数|<br>|ElementType.FIELD|字段|<br>|ElementType.LOCAL_VARIABLE|方法中的本地变量|<br>|ElementType.METHOD|方法|<br>|ElementType.PACKAGE|包|<br>|ElementType.PARAMETER|方法的参数|</p>
+<h2 id="ElementType-TYPE-类，接口或者枚举声明"><a href="#ElementType-TYPE-类，接口或者枚举声明" class="headerlink" title="|ElementType.TYPE|类，接口或者枚举声明|"></a>|ElementType.TYPE|类，接口或者枚举声明|</h2><p> 当然如果Java Annotation 不支持自定义注解的话，那我们还学习这个有什么用呢！这么好用的东西怎么可能不支持自定义呢。接下来看Annotation是如何自定义的<br>Annotation是一种特殊的interface。所以可以在annotation里定义方法，属性；也可以让某个类从annotation继承（implements）。</p>
+</blockquote>
+<p>先看代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">MyAnnotation.java</span><br><span class="line"></span><br><span class="line">public @interface MyAnnotation&#123;</span><br><span class="line">    public String value();</span><br><span class="line">    public String[] Values();</span><br><span class="line">    int number() default 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>MyAnnotation具有一个返回String的value方法，返回String[]的Values 方法；还有一个返回int 的number方法。其中number方法具有默认值0。</p>
+<p>使用例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">TestMyAnnotation.java</span><br><span class="line"></span><br><span class="line">class TestMyAnnotation3&#123;</span><br><span class="line">    @MyAnnotation3(value = &quot;call testMethod1 &quot;, Values=&#123;&quot;1 &quot;, &quot;2 &quot;&#125;, number = 1)</span><br><span class="line">    public void testMethod1() &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @MyAnnotation3(value = &quot;call testMethod2 &quot;, Values=&#123;&quot;1 &quot;, &quot;2 &quot;&#125;)</span><br><span class="line">    public void testMethod2() &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="number具有默认值，所以标注时可以不为其赋值。其余方法则必须通过上面介绍的方法赋值。multiValues返回一个String-数组，所以可以通过Values-“1”-“2”-为其赋值。"><a href="#number具有默认值，所以标注时可以不为其赋值。其余方法则必须通过上面介绍的方法赋值。multiValues返回一个String-数组，所以可以通过Values-“1”-“2”-为其赋值。" class="headerlink" title="number具有默认值，所以标注时可以不为其赋值。其余方法则必须通过上面介绍的方法赋值。multiValues返回一个String[]数组，所以可以通过Values={“1”, “2”}为其赋值。"></a>number具有默认值，所以标注时可以不为其赋值。其余方法则必须通过上面介绍的方法赋值。multiValues返回一个String[]数组，所以可以通过Values={“1”, “2”}为其赋值。</h2><h2 id="看到这里应该对元注解有一定理解了，那么就让我们开始介绍本篇的主角ButterKnife。"><a href="#看到这里应该对元注解有一定理解了，那么就让我们开始介绍本篇的主角ButterKnife。" class="headerlink" title=" 看到这里应该对元注解有一定理解了，那么就让我们开始介绍本篇的主角ButterKnife。"></a> 看到这里应该对元注解有一定理解了，那么就让我们开始介绍本篇的主角ButterKnife。</h2><h2 id="ButterKnife拆解"><a href="#ButterKnife拆解" class="headerlink" title="ButterKnife拆解"></a>ButterKnife拆解</h2><ul>
+<li>要想充分的理解黄油刀的逻辑思路，我们必须去啃源码，从源码中理解其工作的原理和使用的范围，以及这个第三方提供的方法有哪些。这些都是从读源码中获得的，相信看源码对你的编程技术以及逻辑上的严谨性有很大的帮助。</li>
+<li>首先我们从ButterKnife中提供的案例来透析第三方的逻辑。Let`s go。在开始之前还是倡议大家从<a href="https://github.com/JakeWharton/butterknife" target="_blank" rel="external">github上下载源码</a>并建议大家结合代码跟着我一起浏览，这样效果会更加出色。</li>
+<li>首先我们先看一下ButterKnife源码中给我们的例子，通过例子我们来从反面解析其工作原理和使用的方法。这也是我们最快理解源码的渠道（当然这里方法不止一个，找到适合自己的比任何人灌输给你的都好。）</li>
+<li>那么就先让我们从例子的源码开始<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">  public class SimpleActivity extends Activity &#123;</span><br><span class="line">  private static final ButterKnife.Action&lt;View&gt; ALPHA_FADE = new ButterKnife.Action&lt;View&gt;() &#123;</span><br><span class="line">    @Override public void apply(@NonNull View view, int index) &#123;</span><br><span class="line">      AlphaAnimation alphaAnimation = new AlphaAnimation(0, 1);</span><br><span class="line">      alphaAnimation.setFillBefore(true);</span><br><span class="line">      alphaAnimation.setDuration(500);</span><br><span class="line">      alphaAnimation.setStartOffset(index * 100);</span><br><span class="line">      view.startAnimation(alphaAnimation);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  @BindView(R.id.title) TextView title; //BindView是提</span><br><span class="line">              //供绑定视图的元素，无需我们在findviewbyid()</span><br><span class="line">  @BindView(R.id.subtitle) TextView subtitle;</span><br><span class="line">  @BindView(R.id.hello) Button hello;</span><br><span class="line">  @BindView(R.id.list_of_things) ListView listOfThings;</span><br><span class="line">  @BindView(R.id.footer) TextView footer;</span><br><span class="line"></span><br><span class="line">  @BindViews(&#123; R.id.title, R.id.subtitle, R.id.hello &#125;) List&lt;View&gt; headerViews;</span><br><span class="line"></span><br><span class="line">  private SimpleAdapter adapter;</span><br><span class="line"></span><br><span class="line">  @OnClick(R.id.hello) void sayHello() &#123;</span><br><span class="line">    Toast.makeText(this, &quot;Hello, views!&quot;, LENGTH_SHORT).show();</span><br><span class="line">    ButterKnife.apply(headerViews, ALPHA_FADE);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @OnLongClick(R.id.hello) boolean sayGetOffMe() &#123;</span><br><span class="line">    Toast.makeText(this, &quot;Let go of me!&quot;, LENGTH_SHORT).show();</span><br><span class="line">    return true;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @OnItemClick(R.id.list_of_things) void onItemClick(int position) &#123;</span><br><span class="line">    Toast.makeText(this, &quot;You clicked: &quot; + adapter.getItem(position), LENGTH_SHORT).show();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  @Override protected void onCreate(Bundle savedInstanceState) &#123;</span><br><span class="line">    super.onCreate(savedInstanceState);</span><br><span class="line">    setContentView(R.layout.simple_activity);</span><br><span class="line">    ButterKnife.bind(this);</span><br><span class="line"></span><br><span class="line">    // Contrived code to use the bound fields.</span><br><span class="line">    title.setText(&quot;Butter Knife&quot;);</span><br><span class="line">    subtitle.setText(&quot;Field and method binding for Android views.&quot;);</span><br><span class="line">    footer.setText(&quot;by Jake Wharton&quot;);</span><br><span class="line">    hello.setText(&quot;Say Hello&quot;);</span><br><span class="line"></span><br><span class="line">    adapter = new SimpleAdapter(this);</span><br><span class="line">    listOfThings.setAdapter(adapter);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>接下来我们一次点击进入我们感兴趣的注解，首先我们点击<code>@BindView</code>来看看源码是如何定义的这个接口。<br><img src="http://i2.buimg.com/9ec4ab2fbfcdda91s.png" alt=""><br>这里我们看到了接口底层的定义，可以看到这个是自定义的注解，<br>让我们看看这个接口注解所表示的含义。<br><figure class="highlight plain"><figcaption><span>Bind a field to the view for the specified ID. The view will automatically be cast to the field</span><a href="//绑定视图的ID,并且会">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">                                                        //自动添加到域中</span><br><span class="line">* type.</span><br><span class="line">* &lt;pre&gt;&lt;code&gt;</span><br><span class="line">* &#123;@literal @&#125;BindView(R.id.title) TextView title;//这是提供给我   </span><br><span class="line">*                                                                   //们使用的方法格式。</span><br><span class="line">* &lt;/code&gt;&lt;/pre&gt;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure></p>
+<p> 其次我们来看看接口头部的注解含义：<code>@Retention(CLASS) @Target(FIELD)</code>这些属性值上面已经讲解了所以不再描述。<br> 在图片中我们注意到了<code>@IdRes</code> 我们点进去查看源码，<img src="http://i2.buimg.com/4c8801a9309550b0s.png" alt=""><br> 从图片中我们可以清楚的看到这个接口中定义的注解，根据注解的类型就可以清晰知道这个接口是实现什么功能。</p>
+<h2 id="当然这个元注解-是实现Target规定的类型当作一个指定id的资源引用。是不是自定义起来也很简单呢，看示例源码感觉代码简介工作量突然减少了呢！那就快快加入元注解队列吧。"><a href="#当然这个元注解-是实现Target规定的类型当作一个指定id的资源引用。是不是自定义起来也很简单呢，看示例源码感觉代码简介工作量突然减少了呢！那就快快加入元注解队列吧。" class="headerlink" title=" 当然这个元注解 是实现Target规定的类型当作一个指定id的资源引用。是不是自定义起来也很简单呢，看示例源码感觉代码简介工作量突然减少了呢！那就快快加入元注解队列吧。"></a> 当然这个元注解 是实现Target规定的类型当作一个指定id的资源引用。是不是自定义起来也很简单呢，看示例源码感觉代码简介工作量突然减少了呢！那就快快加入元注解队列吧。</h2><ul>
+<li>接下来介绍butterknife的使用方法。（这里需要注意在Fragment的和adapter中需要多家一个root view参数）Fragegment使用时记得同时继承onDestroyView，并在其中将ButterKnife.reset<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">  public class FancyFragment extends Fragment &#123;</span><br><span class="line">  @InjectView(R.id.button1) Button button1;</span><br><span class="line">  @InjectView(R.id.button2) Button button2;</span><br><span class="line"></span><br><span class="line">   @Override View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) &#123;</span><br><span class="line">    View view = inflater.inflate(R.layout.fancy_fragment, container, false);</span><br><span class="line">     ButterKnife.inject(this, view);</span><br><span class="line">     // TODO Use &quot;injected&quot; views...</span><br><span class="line">     return view;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  @Override void onDestroyView() &#123;</span><br><span class="line">    super.onDestroyView();</span><br><span class="line">    ButterKnife.reset(this);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>还可以实例化控件数组，注解多一个s，也就是 InjectViews<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@InjectViews(&#123; R.id.first_name, R.id.middle_name, R.id.last_name &#125;) List&lt;EditText&gt; nameViews;</span><br></pre></td></tr></table></figure></p>
+<h2 id="推荐大家使用的快速注解AS插件"><a href="#推荐大家使用的快速注解AS插件" class="headerlink" title="推荐大家使用的快速注解AS插件"></a>推荐大家使用的快速注解AS插件</h2><p>首先看看如何在Android Studio上安装该插件，直接看图：</p>
+<p>安装好后需要restart你的Android Studio。</p>
+<p>在使用此插件前，需要已经导入了butterknife的jar（或者在build.gradle中已经加入：compile ‘com.jakewharton:butterknife:7.0.0 ‘ ）</p>
+<p>随后，在你需要导入注解的Activity或者Fragment或者ViewHolder的layout资源代码上，右击，选择 Generate 然后 Generate ButterKnife Injections，这时候生成类似于下列的选择框：</p>
+<p>Element为view的类型，ID为layout中资源的id名字，Variable Name即为你在代码中引用出来的变量名，点击Confirm后即可。</p>
+<p>下面是Android ButterKnife Zelezny的github上的一个动态使用流程图：<br> <img src="http://img0.tuicool.com/JfQ73eI.gif" alt=""></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/06/09/ButterKnife详解/">ButterKnife详解</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Hou Shuai</a></p>
+        <p><span>发布时间:</span>2016-06-09, 17:50:22</p>
+        <p><span>最后更新:</span>2016-06-09, 17:51:40</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/06/09/ButterKnife详解/" title="ButterKnife详解">http://yoursite.com/child/2016/06/09/ButterKnife详解/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/child/2016/06/09/ButterKnife详解/　　作者: Hou Shuai" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2016/06/07/hexo上搭建GitHub托管博客/">
+                    hexo上搭建GitHub托管博客
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#开章简介"><span class="toc-number">1.</span> <span class="toc-text">开章简介</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hi-大家好-今天将为大家带来有关Android第三方框架ButterKnife的详细讲解。"><span class="toc-number">1.1.</span> <span class="toc-text">Hi,大家好 今天将为大家带来有关Android第三方框架ButterKnife的详细讲解。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ButterKnife介绍"><span class="toc-number">1.2.</span> <span class="toc-text">ButterKnife介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#limitations-under-the-License"><span class="toc-number">1.3.</span> <span class="toc-text">limitations under the License.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#以上是引用来自github这里英文简单的介绍了如何在AndroidStudio中引用依赖包，并且简单的介绍了一下使用的方法，对于英文好的朋友这些都是很简单的，但是对于那些英语不好的朋友，就显得有一些不友善了，毕竟我们是大中华。但这丝毫不能阻止我们对工具的渴求，那么接下来我将讲解黄油刀ButterKnife的详细介绍。"><span class="toc-number">1.4.</span> <span class="toc-text">以上是引用来自github这里英文简单的介绍了如何在AndroidStudio中引用依赖包，并且简单的介绍了一下使用的方法，对于英文好的朋友这些都是很简单的，但是对于那些英语不好的朋友，就显得有一些不友善了，毕竟我们是大中华。但这丝毫不能阻止我们对工具的渴求，那么接下来我将讲解黄油刀ButterKnife的详细介绍。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ButterKnife所用到的Java技术"><span class="toc-number">1.5.</span> <span class="toc-text">ButterKnife所用到的Java技术</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在介绍前，需要大家了解一下黄油刀所用到的java知识基础。这里用到的技术为java的元注解，当然我还没有发有关于元注解的博文，因此这里的介绍就引用了竹子-博客-要深入了解第三方技术，请先进入了解，元注解机制。"><span class="toc-number">1.6.</span> <span class="toc-text">在介绍前，需要大家了解一下黄油刀所用到的java知识基础。这里用到的技术为java的元注解，当然我还没有发有关于元注解的博文，因此这里的介绍就引用了竹子-博客,要深入了解第三方技术，请先进入了解，元注解机制。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Retention-annotation的作用期间"><span class="toc-number">1.7.</span> <span class="toc-text">@Retention annotation的作用期间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#"><span class="toc-number">1.8.</span> <span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ElementType-TYPE-类，接口或者枚举声明"><span class="toc-number">1.9.</span> <span class="toc-text">|ElementType.TYPE|类，接口或者枚举声明|</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#number具有默认值，所以标注时可以不为其赋值。其余方法则必须通过上面介绍的方法赋值。multiValues返回一个String-数组，所以可以通过Values-“1”-“2”-为其赋值。"><span class="toc-number">1.10.</span> <span class="toc-text">number具有默认值，所以标注时可以不为其赋值。其余方法则必须通过上面介绍的方法赋值。multiValues返回一个String[]数组，所以可以通过Values={“1”, “2”}为其赋值。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#看到这里应该对元注解有一定理解了，那么就让我们开始介绍本篇的主角ButterKnife。"><span class="toc-number">1.11.</span> <span class="toc-text"> 看到这里应该对元注解有一定理解了，那么就让我们开始介绍本篇的主角ButterKnife。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ButterKnife拆解"><span class="toc-number">1.12.</span> <span class="toc-text">ButterKnife拆解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#当然这个元注解-是实现Target规定的类型当作一个指定id的资源引用。是不是自定义起来也很简单呢，看示例源码感觉代码简介工作量突然减少了呢！那就快快加入元注解队列吧。"><span class="toc-number">1.13.</span> <span class="toc-text"> 当然这个元注解 是实现Target规定的类型当作一个指定id的资源引用。是不是自定义起来也很简单呢，看示例源码感觉代码简介工作量突然减少了呢！那就快快加入元注解队列吧。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#推荐大家使用的快速注解AS插件"><span class="toc-number">1.14.</span> <span class="toc-text">推荐大家使用的快速注解AS插件</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script>
+    yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+</script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"ButterKnife详解　| 喜欢雨天的我　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/06/09/ButterKnife详解/" data-title="ButterKnife详解" data-url="http://yoursite.com/child/2016/06/09/ButterKnife详解/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"houshuai"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = 'http://houshuai0816.github.io/js/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2016/06/07/hexo上搭建GitHub托管博客/" title="下一篇: hexo上搭建GitHub托管博客">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/ButterKnife详解/">ButterKnife详解</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/07/hexo上搭建GitHub托管博客/">hexo上搭建GitHub托管博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/战火不熄-青春不灭/">战火不熄-青春不灭</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/常用的第三方框架/">常用的第三方框架</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/MarkDown初步入门攻略/">MarkDown初步入门攻略</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/https和http之间的差别/">https和http之间的差别</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/AndroidStudio快捷键/">AndroidStudio快捷键</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016 Hou Shuai
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.0">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+	 
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 10;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
